@@ -1,8 +1,17 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useToast } from "@/hooks/use-toast";
 
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const { toast } = useToast();
+
+  const handleComingSoon = () => {
+    toast({
+      title: "Coming Soon!",
+      description: "Our blog content is currently being prepared. Check back soon!",
+    });
+  };
 
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
@@ -56,12 +65,20 @@ const Index = () => {
             Practical guidance for women entrepreneurs ready to build businesses they love without the overwhelm.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4">
-            <button className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg">
+            <a 
+              href="https://calendly.com/poquillo/30-min" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg text-center"
+            >
               Get Started
-            </button>
-            <button className="bg-white text-black border border-black hover:bg-gray-50 font-medium py-3 px-8 transition duration-300 text-lg">
+            </a>
+            <Link 
+              to="/who-we-serve"
+              className="bg-white text-black border border-black hover:bg-gray-50 font-medium py-3 px-8 transition duration-300 text-lg text-center"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
         <div className="md:w-1/2 relative">
@@ -94,32 +111,29 @@ const Index = () => {
               {
                 title: "90-Day Launch Accelerator",
                 description: "From vision to first client with a simple, step-by-step plan that actually works.",
-                icon: "🚀",
-                link: "#"
+                icon: "🚀"
               },
               {
                 title: "Business Clarity Session",
                 description: "Transform your most pressing business challenge into a clear action plan in just 60 minutes.",
-                icon: "✨",
-                link: "#"
+                icon: "✨"
               },
               {
                 title: "Custom Implementation Support",
                 description: "Personalized guidance to take your established business to the next level.",
-                icon: "⭐",
-                link: "#"
+                icon: "⭐"
               }
             ].map((service, index) => (
               <div key={index} className="bg-white border border-gray-100 p-8 transition-all hover:shadow-md">
                 <div className="text-3xl mb-4">{service.icon}</div>
                 <h3 className="text-xl font-bold mb-3">{service.title}</h3>
                 <p className="text-gray-600 mb-6">{service.description}</p>
-                <a 
-                  href={service.link} 
+                <Link 
+                  to="/programs" 
                   className="inline-block text-pink-500 hover:text-pink-600 font-medium transition"
                 >
                   Learn more →
-                </a>
+                </Link>
               </div>
             ))}
           </div>
@@ -185,7 +199,7 @@ const Index = () => {
               Thank you so much, Gaby, for everything you do. I'm so grateful my mom shared your information with me. You've been such a blessing—thank you!
             </p>
             <div className="flex items-center justify-center">
-              <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+              <div className="w-12 h-12 bg-pink-500 rounded-full mr-4"></div>
               <div className="text-left">
                 <div className="font-bold">Dr. Whitley C.</div>
                 <div className="text-gray-500">Vital Family Chiropractic</div>
@@ -214,9 +228,12 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 Get ultra-specific about who you're meant to serve. The clearer you are, the easier everything else becomes.
               </p>
-              <a href="#" className="text-pink-500 hover:text-pink-600 font-medium transition">
+              <button 
+                onClick={handleComingSoon}
+                className="text-pink-500 hover:text-pink-600 font-medium transition"
+              >
                 Get my client clarity guide →
-              </a>
+              </button>
             </div>
             <div className="border border-gray-100 p-8">
               <div className="text-pink-500 font-bold text-xl mb-4">02</div>
@@ -224,14 +241,20 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 Identify 20 people you already know who might need your services or know someone who does.
               </p>
-              <a href="#" className="text-pink-500 hover:text-pink-600 font-medium transition">
+              <button 
+                onClick={handleComingSoon}
+                className="text-pink-500 hover:text-pink-600 font-medium transition"
+              >
                 Download outreach templates →
-              </a>
+              </button>
             </div>
           </div>
           
           <div className="mt-12 text-center">
-            <button className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg">
+            <button 
+              onClick={handleComingSoon}
+              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg"
+            >
               Get More Practical Tips
             </button>
           </div>
@@ -247,9 +270,14 @@ const Index = () => {
           <p className="text-xl mb-10 max-w-3xl mx-auto">
             Let's turn confusion into your next clear step. Book a discovery call to see how we can work together.
           </p>
-          <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-4 px-10 transition duration-300 text-lg">
+          <a 
+            href="https://calendly.com/poquillo/30-min"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-4 px-10 transition duration-300 text-lg inline-block"
+          >
             Book Your Discovery Call
-          </button>
+          </a>
         </div>
       </section>
       
