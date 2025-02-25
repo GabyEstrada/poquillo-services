@@ -310,15 +310,15 @@ const Index = () => {
               <div>
                 <h3 className="font-bold mb-4">Connect</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" onClick={handleComingSoon} className="text-gray-600 hover:text-pink-500 transition">Instagram</a></li>
-                  <li><a href="#" onClick={handleComingSoon} className="text-gray-600 hover:text-pink-500 transition">LinkedIn</a></li>
-                  <li><a href="mailto:hello@poquillo.co" className="text-gray-600 hover:text-pink-500 transition">Email</a></li>
+                  <li><a href="https://www.instagram.com/poquillo1212/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition">Instagram</a></li>
+                  <li><a href="https://www.linkedin.com/in/gaby-estrada/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition">LinkedIn</a></li>
+                  <li><a href="https://www.youtube.com/@poquillo" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition">YouTube</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500 text-sm">
-            <p>© 2024 Poquillo. All rights reserved.</p>
+            <p>© 2025 Poquillo. All rights reserved.</p>
           </div>
         </div>
       </footer>
