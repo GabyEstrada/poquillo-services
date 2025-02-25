@@ -51,9 +51,9 @@ const AboutPage = () => {
         <div className="md:w-1/2 relative">
           <div className="absolute -top-6 -left-6 w-32 h-32 bg-pink-100 rounded-full opacity-70"></div>
           <div className="relative">
-            <div className="w-full h-96 bg-gray-200 overflow-hidden">
+            <div className="w-full h-96 bg-gray-200 overflow-hidden rounded-full">
               <img 
-                src="/api/placeholder/600/700" 
+                src="/lovable-uploads/285f8be7-d42f-40dc-b4cc-f9a8309194c2.png"
                 alt="Gaby Estrada, founder of Poquillo" 
                 className="w-full h-full object-cover"
               />
