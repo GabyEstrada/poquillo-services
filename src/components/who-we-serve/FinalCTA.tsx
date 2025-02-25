@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const FinalCTA = () => {
   return (
@@ -12,12 +13,17 @@ const FinalCTA = () => {
           Let's find the right program to help you move from where you are to where you want to be.
         </p>
         <div className="flex flex-col sm:flex-row gap-6 justify-center">
-          <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 transition duration-300 text-lg">
+          <Link to="/programs" className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 transition duration-300 text-lg">
             Explore Our Programs
-          </button>
-          <button className="bg-transparent hover:bg-white hover:text-black border border-white text-white font-medium py-3 px-8 transition duration-300 text-lg">
+          </Link>
+          <a 
+            href="https://calendly.com/poquillo/30-min" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-transparent hover:bg-white hover:text-black border border-white text-white font-medium py-3 px-8 transition duration-300 text-lg"
+          >
             Book a Discovery Call
-          </button>
+          </a>
         </div>
       </div>
     </section>
