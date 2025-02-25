@@ -68,7 +68,7 @@ const Index = () => {
           <div className="w-full h-80 md:h-96 bg-pink-100 relative overflow-hidden">
             <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-tr from-pink-200 to-pink-50 opacity-80"></div>
             <img 
-              src="https://images.unsplash.com/photo-1581091226825-a6a2a5aee158"
+              src="https://images.unsplash.com/photo-1649972904349-6e44c42644a7"
               alt="Woman entrepreneur with confidence" 
               className="object-cover w-full h-full mix-blend-overlay"
             />
