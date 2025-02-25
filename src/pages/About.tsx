@@ -55,7 +55,7 @@ const AboutPage = () => {
               <img 
                 src="/lovable-uploads/285f8be7-d42f-40dc-b4cc-f9a8309194c2.png"
                 alt="Gaby Estrada, founder of Poquillo" 
-                className="w-full h-full object-cover scale-125 object-top"
+                className="w-full h-full object-cover"
               />
             </div>
           </div>
