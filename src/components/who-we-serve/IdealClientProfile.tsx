@@ -22,7 +22,7 @@ const IdealClientProfile = () => {
                 <li className="flex items-start">
                   <span className="text-pink-500 mr-3">●</span>
                   <div>
-                    <span className="font-bold">Business Type:</span> Service-based businesses (consulting, coaching, creative services)
+                    <span className="font-bold">Business Type:</span> Service-based businesses (consulting, coaching, creative services, etc.)
                   </div>
                 </li>
                 <li className="flex items-start">
