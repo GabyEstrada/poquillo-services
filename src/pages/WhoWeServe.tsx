@@ -343,7 +343,7 @@ const WhoWeServePage = () => {
                 <ul className="space-y-2">
                   <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Instagram</Link></li>
                   <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">LinkedIn</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Youtube</Link></li>
+                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">YouTube</Link></li>
                 </ul>
               </div>
             </div>
