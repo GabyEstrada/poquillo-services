@@ -1,5 +1,5 @@
-
 import React, { useState } from 'react';
+import { Link } from 'react-router-dom';
 
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -25,10 +25,10 @@ const Index = () => {
         
         {/* Desktop navigation */}
         <div className="hidden md:flex space-x-8">
-          <a href="#" className="text-gray-900 hover:text-pink-500 transition">Home</a>
-          <a href="#" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</a>
-          <a href="#" className="text-gray-900 hover:text-pink-500 transition">Programs</a>
-          <a href="#" className="text-gray-900 hover:text-pink-500 transition">About</a>
+          <Link to="/" className="text-gray-900 hover:text-pink-500 transition">Home</Link>
+          <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
+          <Link to="#" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
+          <Link to="#" className="text-gray-900 hover:text-pink-500 transition">About</Link>
           <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
         </div>
       </nav>
@@ -37,10 +37,10 @@ const Index = () => {
       {menuOpen && (
         <div className="md:hidden bg-white py-4 px-6 shadow-lg absolute w-full z-10">
           <div className="flex flex-col space-y-4">
-            <a href="#" className="text-gray-900 hover:text-pink-500 transition">Home</a>
-            <a href="#" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</a>
-            <a href="#" className="text-gray-900 hover:text-pink-500 transition">Programs</a>
-            <a href="#" className="text-gray-900 hover:text-pink-500 transition">About</a>
+            <Link to="/" className="text-gray-900 hover:text-pink-500 transition">Home</Link>
+            <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
+            <Link to="#" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
+            <Link to="#" className="text-gray-900 hover:text-pink-500 transition">About</Link>
             <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
           </div>
         </div>
