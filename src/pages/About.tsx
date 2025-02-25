@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
@@ -186,14 +185,9 @@ const AboutPage = () => {
             <Link to="/programs" className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 transition duration-300 text-lg">
               Explore Our Programs
             </Link>
-            <a 
-              href="https://calendly.com/poquillo/30-min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-transparent hover:bg-white hover:text-black border border-white text-white font-medium py-3 px-8 transition duration-300 text-lg"
-            >
+            <Link to="/" className="bg-transparent hover:bg-white hover:text-black border border-white text-white font-medium py-3 px-8 transition duration-300 text-lg">
               Book a Discovery Call
-            </a>
+            </Link>
           </div>
         </div>
       </section>
