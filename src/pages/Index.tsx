@@ -1,8 +1,18 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { toast } from "@/components/ui/use-toast";
 
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleComingSoon = () => {
+    toast({
+      title: "Coming Soon!",
+      description: "This content is being crafted with love and will be available soon.",
+    });
+  };
+
+  const calendlyUrl = "https://calendly.com/poquillo/30-min";
 
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
@@ -27,9 +37,9 @@ const Index = () => {
         <div className="hidden md:flex space-x-8">
           <Link to="/" className="text-gray-900 hover:text-pink-500 transition">Home</Link>
           <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
-          <Link to="#" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
-          <Link to="#" className="text-gray-900 hover:text-pink-500 transition">About</Link>
-          <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
+          <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
+          <Link to="/about" className="text-gray-900 hover:text-pink-500 transition">About</Link>
+          <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</a>
         </div>
       </nav>
       
@@ -39,9 +49,9 @@ const Index = () => {
           <div className="flex flex-col space-y-4">
             <Link to="/" className="text-gray-900 hover:text-pink-500 transition">Home</Link>
             <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
-            <Link to="#" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
-            <Link to="#" className="text-gray-900 hover:text-pink-500 transition">About</Link>
-            <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
+            <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
+            <Link to="/about" className="text-gray-900 hover:text-pink-500 transition">About</Link>
+            <a href={calendlyUrl} target="_blank" rel="noopener noreferrer" className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</a>
           </div>
         </div>
       )}
@@ -56,12 +66,20 @@ const Index = () => {
             Practical guidance for women entrepreneurs ready to build businesses they love without the overwhelm.
           </p>
           <div className="pt-4 flex flex-col sm:flex-row gap-4">
-            <button className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg">
+            <a 
+              href={calendlyUrl}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg text-center"
+            >
               Get Started
-            </button>
-            <button className="bg-white text-black border border-black hover:bg-gray-50 font-medium py-3 px-8 transition duration-300 text-lg">
+            </a>
+            <Link 
+              to="/who-we-serve"
+              className="bg-white text-black border border-black hover:bg-gray-50 font-medium py-3 px-8 transition duration-300 text-lg text-center"
+            >
               Learn More
-            </button>
+            </Link>
           </div>
         </div>
         <div className="md:w-1/2 relative">
@@ -214,9 +232,9 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 Get ultra-specific about who you're meant to serve. The clearer you are, the easier everything else becomes.
               </p>
-              <a href="#" className="text-pink-500 hover:text-pink-600 font-medium transition">
+              <button onClick={handleComingSoon} className="text-pink-500 hover:text-pink-600 font-medium transition">
                 Get my client clarity guide →
-              </a>
+              </button>
             </div>
             <div className="border border-gray-100 p-8">
               <div className="text-pink-500 font-bold text-xl mb-4">02</div>
@@ -224,14 +242,14 @@ const Index = () => {
               <p className="text-gray-600 mb-4">
                 Identify 20 people you already know who might need your services or know someone who does.
               </p>
-              <a href="#" className="text-pink-500 hover:text-pink-600 font-medium transition">
+              <button onClick={handleComingSoon} className="text-pink-500 hover:text-pink-600 font-medium transition">
                 Download outreach templates →
-              </a>
+              </button>
             </div>
           </div>
           
           <div className="mt-12 text-center">
-            <button className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg">
+            <button onClick={handleComingSoon} className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg">
               Get More Practical Tips
             </button>
           </div>
@@ -247,9 +265,14 @@ const Index = () => {
           <p className="text-xl mb-10 max-w-3xl mx-auto">
             Let's turn confusion into your next clear step. Book a discovery call to see how we can work together.
           </p>
-          <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-4 px-10 transition duration-300 text-lg">
+          <a 
+            href={calendlyUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="inline-block bg-pink-500 hover:bg-pink-600 text-white font-medium py-4 px-10 transition duration-300 text-lg"
+          >
             Book Your Discovery Call
-          </button>
+          </a>
         </div>
       </section>
       
@@ -270,32 +293,32 @@ const Index = () => {
               <div>
                 <h3 className="font-bold mb-4">Navigation</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Home</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Who We Serve</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Programs</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">About</a></li>
+                  <li><Link to="/" className="text-gray-600 hover:text-pink-500 transition">Home</Link></li>
+                  <li><Link to="/who-we-serve" className="text-gray-600 hover:text-pink-500 transition">Who We Serve</Link></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Programs</Link></li>
+                  <li><Link to="/about" className="text-gray-600 hover:text-pink-500 transition">About</Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold mb-4">Programs</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</a></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</Link></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</Link></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold mb-4">Connect</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Instagram</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">LinkedIn</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Email</a></li>
+                  <li><a href="#" onClick={handleComingSoon} className="text-gray-600 hover:text-pink-500 transition">Instagram</a></li>
+                  <li><a href="#" onClick={handleComingSoon} className="text-gray-600 hover:text-pink-500 transition">LinkedIn</a></li>
+                  <li><a href="mailto:hello@poquillo.co" className="text-gray-600 hover:text-pink-500 transition">Email</a></li>
                 </ul>
               </div>
             </div>
           </div>
           <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500 text-sm">
-            <p>© 2025 Poquillo. All rights reserved.</p>
+            <p>© 2024 Poquillo. All rights reserved.</p>
           </div>
         </div>
       </footer>
