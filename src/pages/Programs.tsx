@@ -234,15 +234,87 @@ const ProgramsPage = () => {
                     {expandedExpectations === 'fear-to-clarity' ? 'Hide Program Expectations' : 'View Program Expectations'}
                   </button>
                   {expandedExpectations === 'fear-to-clarity' && (
-                    <div className="mt-4 bg-gray-50 p-4 text-sm">
-                      <h5 className="font-bold mb-3">Program Expectations:</h5>
-                      <ul className="space-y-2">
-                        <li>• Come prepared with your business ideas/concerns</li>
-                        <li>• Be open to feedback and new perspectives</li>
-                        <li>• Complete pre-session questionnaire</li>
-                        <li>• Implement action items from your clarity blueprint</li>
-                        <li>• Follow through with the 30-day plan provided</li>
-                      </ul>
+                    <div className="mt-4 bg-gray-50 p-6 text-sm">
+                      <h3 className="text-xl font-bold mb-6">Your Breakthrough Journey 🚀</h3>
+                      
+                      <div className="space-y-8">
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">Phase 1: Discovery & Mindset (90-Min Deep Dive Call)</h4>
+                          <p className="mb-3">Together we'll uncover:</p>
+                          <ul className="space-y-2">
+                            {[
+                              "What's really holding you back (beyond the surface fears)",
+                              "Your unique zones of genius (they're bigger than you think!)",
+                              "The impact you truly want to make",
+                              "Which of your skills light you up the most",
+                              "Where your confidence needs strengthening",
+                              "What success looks like for YOU"
+                            ].map((item, index) => (
+                              <li key={index} className="flex items-start">
+                                <span className="text-pink-500 mr-2">✨</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">Phase 2: Your Custom Clarity Blueprint</h4>
+                          <p className="mb-3">I'll create your complete clarity plan including:</p>
+                          <ul className="space-y-2">
+                            {[
+                              "Ideal Client Profile & Where to Find Them",
+                              "Your Signature Service Framework",
+                              "Unique Selling Proposition",
+                              "Pricing Strategy That Feels Good",
+                              "Simple Marketing Message Guide",
+                              "30-Day Confidence-Building Plan"
+                            ].map((item, index) => (
+                              <li key={index} className="flex items-start">
+                                <span className="text-pink-500 mr-2">✨</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">Phase 3: Implementation Support</h4>
+                          <ul className="space-y-2 mb-4">
+                            {[
+                              "Complete Digital Delivery of All Materials",
+                              "Optional 60-Minute Walkthrough Call",
+                              "Implementation Guide & Templates"
+                            ].map((item, index) => (
+                              <li key={index} className="flex items-start">
+                                <span className="text-pink-500 mr-2">✨</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          <div className="flex items-start">
+                            <span className="text-pink-500 mr-2">✨</span>
+                            <span>Purchase coaching sessions with me (optional)</span>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">How I Make It Simple 🌟</h4>
+                          <ol className="list-decimal pl-5 space-y-2">
+                            <li>Say "No More" to Fear (purchase this listing)</li>
+                            <li>Complete the Fear-to-Clarity Assessment (sent via email after purchase)</li>
+                            <li>Join me for your 90-minute breakthrough session</li>
+                            <li>Receive your complete clarity blueprint (within 3 business days)</li>
+                            <li>Get support with an optional 30-min walkthrough call</li>
+                            <li>Take action with your confidence-building plan</li>
+                          </ol>
+                        </div>
+                        
+                        <div className="bg-pink-50 p-4 rounded">
+                          <h4 className="font-bold text-lg mb-3">My Promise To You ⭐</h4>
+                          <p>No generic ideal client exercises or "just push through the fear" advice. I'll help you dig deep to uncover what's really holding you back and get specific about who you're meant to serve. This is about finding clarity that feels authentic to YOU.</p>
+                        </div>
+                      </div>
                     </div>
                   )}
                 </div>
