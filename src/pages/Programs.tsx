@@ -1,3 +1,4 @@
+<lov-code>
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -143,7 +144,7 @@ const ProgramsPage = () => {
                 
                 <div className="pt-4 border-t border-gray-100">
                   <div className="mb-4">
-                    <span className="text-2xl font-bold">$2,500</span>
+                    <span className="text-2xl font-bold">$2,950</span>
                   </div>
                   <a 
                     href="https://calendly.com/poquillo/30-min"
@@ -160,15 +161,179 @@ const ProgramsPage = () => {
                     {expandedExpectations === 'launch-accelerator' ? 'Hide Program Expectations' : 'View Program Expectations'}
                   </button>
                   {expandedExpectations === 'launch-accelerator' && (
-                    <div className="mt-4 bg-gray-50 p-4 text-sm">
-                      <h5 className="font-bold mb-3">Program Expectations:</h5>
-                      <ul className="space-y-2">
-                        <li>• Commit to 3-5 hours weekly for implementation</li>
-                        <li>• Attend all scheduled strategy calls</li>
-                        <li>• Complete assigned action items between sessions</li>
-                        <li>• Take full responsibility for implementing strategies</li>
-                        <li>• Communicate proactively if facing challenges</li>
-                      </ul>
+                    <div className="mt-4 bg-gray-50 p-6 text-sm">
+                      <h3 className="text-xl font-bold mb-6">Your Journey to Your First Client (In 90-Days) 🚀</h3>
+                      
+                      <div className="space-y-8">
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">Phase 1: Setting Your Foundation</h4>
+                          <p className="mb-3">Together we'll create your success toolkit:</p>
+                          <ul className="space-y-2">
+                            {[
+                              "Your Perfect Client Profile",
+                              "Your Signature Service (that feels amazing to offer!)",
+                              "Simple & Beautiful Marketing Materials",
+                              "Authentic Outreach Messages"
+                            ].map((item, index) => (
+                              <li key={index} className="flex items-start">
+                                <span className="text-pink-500 mr-2">✨</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">Phase 2: Connecting With Confidence</h4>
+                          <p className="mb-3">Building momentum día por día:</p>
+                          <ul className="space-y-2">
+                            {[
+                              "Personal Network Outreach (20 meaningful connections daily)",
+                              "Heart-Centered Message Templates",
+                              "Simple Progress Tracking",
+                              "Weekly Celebration & Strategy Calls",
+                              "Adjustments When Needed (because flexibility is key!)"
+                            ].map((item, index) => (
+                              <li key={index} className="flex items-start">
+                                <span className="text-pink-500 mr-2">✨</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">Additional Support (Available When You Need It!) ✨</h4>
+                          <p className="mb-3">Extra tools to expand your reach:</p>
+                          <ul className="space-y-2">
+                            {[
+                              "Cold Email Templates & Strategy",
+                              "LinkedIn Profile Optimization",
+                              "Additional Connection Channels"
+                            ].map((item, index) => (
+                              <li key={index} className="flex items-start">
+                                <span className="text-pink-500 mr-2">✨</span>
+                                <span>{item}</span>
+                              </li>
+                            ))}
+                          </ul>
+                          <p className="mt-4 text-gray-600 italic">
+                            Note: Many of our amigas land their first client through personal network outreach alone! These additional tools are here for you if and when you want to expand your reach further.
+                          </p>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">How We'll Make Magic Happen 📋</h4>
+                          
+                          <div className="space-y-6">
+                            <div>
+                              <h5 className="font-bold mb-3">Weekly Support & Celebrations</h5>
+                              <ul className="space-y-2">
+                                {[
+                                  "30-min Check-in & Strategy Calls",
+                                  "Review Your Amazing Progress",
+                                  "Fine-tune Your Approach",
+                                  "Celebrate Every Win (big or small!)",
+                                  "Problem-Solve Together"
+                                ].map((item, index) => (
+                                  <li key={index} className="flex items-start">
+                                    <span className="text-pink-500 mr-2">✨</span>
+                                    <span>{item}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            
+                            <div>
+                              <h5 className="font-bold mb-3">Your Success Tools</h5>
+                              <ul className="space-y-2">
+                                {[
+                                  "Simple Daily Tracker",
+                                  "Authentic Message Templates",
+                                  "Beautiful Marketing Materials",
+                                  "Connection Scripts That Feel Natural"
+                                ].map((item, index) => (
+                                  <li key={index} className="flex items-start">
+                                    <span className="text-pink-500 mr-2">✨</span>
+                                    <span>{item}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                            
+                            <div>
+                              <h5 className="font-bold mb-3">Your Path to Success</h5>
+                              <ul className="space-y-2">
+                                {[
+                                  "Commit to 20 meaningful connections daily",
+                                  "Join weekly accountability celebrations",
+                                  "Track your progress with pride",
+                                  "Follow our proven system",
+                                  "Trust the process, amiga!"
+                                ].map((item, index) => (
+                                  <li key={index} className="flex items-start">
+                                    <span className="text-pink-500 mr-2">✨</span>
+                                    <span>{item}</span>
+                                  </li>
+                                ))}
+                              </ul>
+                            </div>
+                          </div>
+                        </div>
+                        
+                        <div className="bg-pink-50 p-4 rounded">
+                          <h4 className="font-bold text-lg mb-3">My Promise To You ⭐</h4>
+                          <p className="mb-4">When you show up for yourself by following this system – reaching out to 20 potential connections every day and implementing our strategies with heart – you will find your first amazing client. This isn't about being perfect; it's about being consistently YOU.</p>
+                          <p className="italic text-gray-600">Note: This program works when you do! Your success depends on completing your daily outreach and participating fully in the process.</p>
+                        </div>
+                        
+                        <div className="border-t border-gray-200 pt-6">
+                          <h4 className="text-xl font-bold mb-4">Special Bonus: AI Business Accelerator 🚀</h4>
+                          <h5 className="font-bold mb-3">Supercharge Your Business with AI ✨</h5>
+                          <p className="mb-4">As a special bonus, you'll get exclusive access to:</p>
+                          
+                          <div>
+                            <h5 className="font-bold mb-3">AI Business Masterclass</h5>
+                            <p className="mb-3">Learn how to leverage AI tools to:</p>
+                            <ul className="space-y-2">
+                              {[
+                                "Create content in minutes instead of hours",
+                                "Generate creative ideas quickly",
+                                "Enhance your client communications",
+                                "Scale your business efficiently"
+                              ].map((item, index) => (
+                                <li key={index} className="flex items-start">
+                                  <span className="text-pink-500 mr-2">✨</span>
+                                  <span>{item}</span>
+                                </li>
+                              ))}
+                            </ul>
+                            <p className="mt-4 italic text-gray-600">
+                              This bonus alone can save you 10+ hours every week, letting you focus more time on connecting with potential clients and growing your business!
+                            </p>
+                          </div>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">How the Phases Work 🌟</h4>
+                          <p>Each phase adapts to your unique journey. We'll focus first on the proven strategies that work fastest (connecting with your network!), and then provide additional support tools as you need them.</p>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold text-lg mb-4">Let's Make Sure We're a Match 🤍</h4>
+                          <p className="mb-3">This program is perfect for you if you're ready to:</p>
+                          <ul className="list-disc pl-5 space-y-2 mb-4">
+                            <li>Dedicate time daily to reaching out (20 connections minimum)</li>
+                            <li>Keep track of your amazing progress</li>
+                            <li>Show up for our weekly strategy sessions</li>
+                            <li>Start simple and grow naturally</li>
+                            <li>Trust and follow our proven process</li>
+                          </ul>
+                          <p className="italic text-gray-600">
+                            This program is for mi amigas who are ready to take action with heart. If you're looking for overnight success without the work, this might not be your perfect fit.
+                          </p>
+                        </div>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -540,253 +705,4 @@ const ProgramsPage = () => {
                             "Project-based implementation",
                             "Monthly strategy & support",
                             "Intensive implementation days",
-                            "Ongoing business coaching"
-                          ].map((item, index) => (
-                            <li key={index} className="flex items-start">
-                              <span className="text-pink-500 mr-3">✓</span>
-                              <span className="text-gray-700">{item}</span>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
-                    </div>
-                    
-                    <p className="text-gray-600 mb-4">
-                      We'll create a solution that fits your exact needs - no cookie-cutter approaches or unnecessary fluff. Every recommendation will be tailored to your business goals and implementation capacity.
-                    </p>
-                  </div>
-                  
-                  <div className="lg:w-1/3 bg-gray-50 p-6">
-                    <h4 className="font-bold text-lg mb-4">Custom Solution Process</h4>
-                    <ul className="space-y-4">
-                      {[
-                        { title: "Application", description: "Complete a quick form about your business needs" },
-                        { title: "Discovery Call", description: "Review your goals and explore solutions" },
-                        { title: "Custom Proposal", description: "Receive a tailored plan for your business" },
-                        { title: "Implementation", description: "Get personalized support for your growth" }
-                      ].map((item, index) => (
-                        <li key={index} className="flex items-start">
-                          <div className="bg-black text-white rounded-full w-6 h-6 flex items-center justify-center text-xs mr-3 mt-1">
-                            {index + 1}
-                          </div>
-                          <div>
-                            <span className="font-bold block">{item.title}</span>
-                            <span className="text-gray-600 text-sm">{item.description}</span>
-                          </div>
-                        </li>
-                      ))}
-                    </ul>
-                    
-                    <div className="mt-6 pt-4 border-t border-gray-200">
-                      <p className="text-sm text-gray-500 mb-4">Investment: Custom quoted based on scope</p>
-                      <p className="text-gray-600 mb-4">Typically ranges from $3,000-$10,000 depending on scope</p>
-                      <a 
-                        href="https://forms.gle/6ESizVy8YX7pEHFc7"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block"
-                      >
-                        Apply Now
-                      </a>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* Process Overview */}
-      <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
-              Our Simple Process
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              A general framework that adapts to each program's specific needs.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
-            {[
-              { title: "Initial Connection", description: "Through a discovery call or assessment form, we'll understand your unique needs and challenges." },
-              { title: "Kickoff Call", description: "Together, we'll map out a personalized action plan tailored to your specific situation." },
-              { title: "Implementation Support", description: "Get guidance through sessions (where applicable) or structured support appropriate to your program." },
-              { title: "Project Delivery", description: "Receive tangible results: a clear strategy, action plan, or completed deliverable." },
-              { title: "Next Steps", description: "We'll review your progress and identify opportunities for continued growth and success." }
-            ].map((step, index) => (
-              <div key={index} className="flex flex-col items-center text-center">
-                <div className="relative">
-                  <div className="bg-white border border-gray-200 rounded-full w-16 h-16 flex items-center justify-center text-lg font-bold z-10 relative">
-                    {index + 1}
-                  </div>
-                  {index < 4 && (
-                    <div className="hidden md:block absolute top-8 left-16 w-full h-0.5 bg-gray-200 -z-10"></div>
-                  )}
-                </div>
-                <h3 className="font-bold text-lg mt-4 mb-2">{step.title}</h3>
-                <p className="text-gray-600 text-sm">{step.description}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Testimonials Section */}
-      <section className="py-16 px-6 md:px-12 lg:px-24">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
-              Client Experiences
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Stories from entrepreneurs who've transformed their businesses with our programs.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            <div className="bg-gray-50 p-8 relative">
-              <div className="text-5xl text-pink-200 absolute top-4 left-6">"</div>
-              <div className="relative">
-                <p className="text-gray-700 italic mb-6 pt-6">
-                  Working with Gabriela was great! She was thoughtful and very communicative. She made sure to send me several iterations of designs and was very open to feedback. I highly recommend working with her for all your needs!
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-soft-purple rounded-full mr-4"></div>
-                  <div>
-                    <div className="font-bold">Stephanie C.</div>
-                    <div className="text-gray-500 text-sm">Coconut Coaching</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-gray-50 p-8 relative">
-              <div className="text-5xl text-pink-200 absolute top-4 left-6">"</div>
-              <div className="relative">
-                <p className="text-gray-700 italic mb-6 pt-6">
-                  Thank you so much, Gaby, for everything you do. I'm so grateful my mom shared your information with me. You've been such a blessing—thank you!
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-soft-pink rounded-full mr-4"></div>
-                  <div>
-                    <div className="font-bold">Dr. Whitley C.</div>
-                    <div className="text-gray-500 text-sm">Vital Family Chiropractic</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* FAQ Section */}
-      <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
-              Common Questions
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Everything you need to know before getting started.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                question: "How do I know which program is right for me?",
-                answer: "The best program depends on your business stage and specific needs. If you're just starting out, our 90-Day Launch Accelerator or Fear to Clarity Session are ideal. For established businesses facing specific challenges, try our Clarity Breakthrough Session or Custom Implementation Support. Still unsure? Book a free discovery call and we'll help you decide."
-              },
-              {
-                question: "What makes your approach different?",
-                answer: "We focus on simplicity and implementation rather than complicated strategies or theory. Our programs are designed to give you clear, actionable steps that feel doable. We also bring a bicultural perspective, making our guidance especially valuable for entrepreneurs from diverse backgrounds."
-              },
-              {
-                question: "Do I need to have a business idea already?",
-                answer: "For most programs, yes. Our Fear to Clarity Session can help if you have multiple ideas and need to choose one. For our Launch Accelerator, you should have at least a general direction for your business, though we'll help refine and clarify it."
-              },
-              {
-                question: "Can I get a refund if I'm not satisfied?",
-                answer: "We don't offer refunds, as our programs require your active participation to succeed. However, we're deeply committed to your success and will work with you to ensure you get value from our programs. If you're on the fence, start with a smaller program like our Clarity Breakthrough Session to experience our approach."
-              }
-            ].map((item, index) => (
-              <div key={index} className="bg-white p-6 border border-gray-100">
-                <h3 className="text-xl font-bold mb-3">{item.question}</h3>
-                <p className="text-gray-600">{item.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Final CTA */}
-      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-black text-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to transform your business?
-          </h2>
-          <p className="text-xl mb-10 max-w-3xl mx-auto">
-            Let's find the right program to help you move from confusion to clarity and confident action.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 transition duration-300 text-lg">
-              Book Your Discovery Call
-            </button>
-          </div>
-        </div>
-      </section>
-      
-      {/* Footer */}
-      <footer className="py-12 px-6 md:px-12 lg:px-24 bg-gray-50 text-center md:text-left">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between">
-            <div className="mb-8 md:mb-0">
-              <div className="flex items-center justify-center md:justify-start">
-                <span className="text-black font-bold text-xl">Poquillo</span>
-                <span className="ml-2 text-xs bg-pink-100 text-pink-600 px-2 py-1 rounded-sm">by Gaby Estrada</span>
-              </div>
-              <p className="text-gray-600 mt-4 max-w-xs mx-auto md:mx-0">
-                Helping women entrepreneurs build confidence and clarity in their business journey.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="font-bold mb-4">Navigation</h3>
-                <ul className="space-y-2">
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Home</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Who We Serve</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Programs</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">About</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-bold mb-4">Programs</h3>
-                <ul className="space-y-2">
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-bold mb-4">Connect</h3>
-                <ul className="space-y-2">
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Instagram</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">LinkedIn</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Email</Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500 text-sm">
-            <p>© 2025 Poquillo. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default ProgramsPage;
+                            "Ongoing business coaching
