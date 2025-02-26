@@ -88,7 +88,7 @@ const ProgramsPage = () => {
       </section>
       
       {/* Programs Grid */}
-      <section id="programs-list" className="pb-16 px-6 md:px-12 lg:px-24">
+      <section className="pb-16 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-3 gap-8">
             {/* Program 1 */}
@@ -179,7 +179,7 @@ const ProgramsPage = () => {
                     "Ideal client profile & service framework",
                     "Pricing strategy that feels right",
                     "30-day confidence-building plan",
-                    "7 days of confidence-building plan"
+                    "7 days of implementation support"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-pink-500 mr-3">✓</span>
