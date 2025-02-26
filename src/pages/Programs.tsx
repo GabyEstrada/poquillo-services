@@ -311,15 +311,121 @@ const ProgramsPage = () => {
                     {expandedExpectations === 'clarity-breakthrough' ? 'Hide Program Expectations' : 'View Program Expectations'}
                   </button>
                   {expandedExpectations === 'clarity-breakthrough' && (
-                    <div className="mt-4 bg-gray-50 p-4 text-sm">
-                      <h5 className="font-bold mb-3">Program Expectations:</h5>
-                      <ul className="space-y-2">
-                        <li>• Have a specific business challenge in mind</li>
-                        <li>• Complete pre-session brief</li>
-                        <li>• Be ready to take immediate action</li>
-                        <li>• Implement the provided solution plan</li>
-                        <li>• Schedule follow-up call if needed</li>
-                      </ul>
+                    <div className="mt-4 bg-gray-50 p-6 text-sm">
+                      <h3 className="text-xl font-bold mb-6">What's Included in Your Breakthrough Session 🚀</h3>
+                      
+                      <div className="space-y-6">
+                        <div>
+                          <h4 className="font-bold mb-3">Pre-Session</h4>
+                          <ul className="space-y-2">
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Focused Business Assessment Form</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Expert review of your current situation</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Personalized solution preparation</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold mb-3">Strategy Session (60 minutes)</h4>
+                          <ul className="space-y-2">
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Deep-dive into your specific challenge</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Identify core bottleneck</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Explore targeted solutions</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Prioritize next steps</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold mb-3">Your Custom Solution Plan</h4>
+                          <ul className="space-y-2">
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Detailed Action Plan delivered within 24-hours</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Estimated implementation timeline included</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Recommended tools & resources</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Clear success metrics</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold mb-3">Optional Implementation Support</h4>
+                          <ul className="space-y-2">
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Optional 15-min walkthrough call within 7 days of plan delivery</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Quote for Poquillo implementation support</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold mb-3">How Simple I Make It 🌟</h4>
+                          <ol className="space-y-2 list-decimal pl-5">
+                            <li>Say yes to clarity (purchase this listing)</li>
+                            <li>Fill out the focused assessment form (link in the purchase email receipt)</li>
+                            <li>Join your breakthrough strategy session</li>
+                            <li>Receive your custom solution plan</li>
+                            <li>Get implementation support (optional)</li>
+                            <li>Start seeing results</li>
+                          </ol>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold mb-3">Who is this for? 🎯</h4>
+                          <ul className="space-y-2">
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✔️</span>
+                              <span>Solopreneurs & Small Business Owners</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✔️</span>
+                              <span>Those feeling stuck & needing expert guidance</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✔️</span>
+                              <span>Anyone launching, scaling, or troubleshooting their business</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div className="bg-pink-50 p-4 rounded">
+                          <h4 className="font-bold mb-3">My Promise To You ⭐</h4>
+                          <p>No surface-level advice or generic solutions. I'll help you identify the real root of your challenge and create a practical action plan that moves your business forward. You'll walk away knowing exactly what to do next and how to do it.</p>
+                        </div>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -476,7 +582,7 @@ const ProgramsPage = () => {
                   Working with Gabriela was great! She was thoughtful and very communicative. She made sure to send me several iterations of designs and was very open to feedback. I highly recommend working with her for all your needs!
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                  <div className="w-12 h-12 bg-soft-purple rounded-full mr-4"></div>
                   <div>
                     <div className="font-bold">Stephanie C.</div>
                     <div className="text-gray-500 text-sm">Coconut Coaching</div>
@@ -492,7 +598,7 @@ const ProgramsPage = () => {
                   Thank you so much, Gaby, for everything you do. I'm so grateful my mom shared your information with me. You've been such a blessing—thank you!
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-gray-200 rounded-full mr-4"></div>
+                  <div className="w-12 h-12 bg-soft-pink rounded-full mr-4"></div>
                   <div>
                     <div className="font-bold">Dr. Whitley C.</div>
                     <div className="text-gray-500 text-sm">Vital Family Chiropractic</div>
