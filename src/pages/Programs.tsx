@@ -4,6 +4,15 @@ import { Link } from 'react-router-dom';
 const ProgramsPage = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [selectedTab, setSelectedTab] = useState('all');
+  const [expandedExpectations, setExpandedExpectations] = useState<string | null>(null);
+
+  const toggleExpectations = (programId: string) => {
+    if (expandedExpectations === programId) {
+      setExpandedExpectations(null);
+    } else {
+      setExpandedExpectations(programId);
+    }
+  };
 
   return (
     <div className="min-h-screen bg-white text-gray-900 font-sans">
@@ -133,18 +142,35 @@ const ProgramsPage = () => {
                 </ul>
                 
                 <div className="pt-4 border-t border-gray-100">
-                  <div className="flex justify-between items-center mb-4">
+                  <div className="mb-4">
                     <span className="text-2xl font-bold">$2,500</span>
-                    <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
                   <a 
                     href="https://calendly.com/poquillo/30-min"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block"
+                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block mb-3"
                   >
                     Learn More
                   </a>
+                  <button
+                    onClick={() => toggleExpectations('launch-accelerator')}
+                    className="w-full border border-gray-200 text-gray-600 py-2 text-sm hover:bg-gray-50 transition"
+                  >
+                    {expandedExpectations === 'launch-accelerator' ? 'Hide Program Expectations' : 'View Program Expectations'}
+                  </button>
+                  {expandedExpectations === 'launch-accelerator' && (
+                    <div className="mt-4 bg-gray-50 p-4 text-sm">
+                      <h5 className="font-bold mb-3">Program Expectations:</h5>
+                      <ul className="space-y-2">
+                        <li>• Commit to 3-5 hours weekly for implementation</li>
+                        <li>• Attend all scheduled strategy calls</li>
+                        <li>• Complete assigned action items between sessions</li>
+                        <li>• Take full responsibility for implementing strategies</li>
+                        <li>• Communicate proactively if facing challenges</li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -190,18 +216,35 @@ const ProgramsPage = () => {
                 </ul>
                 
                 <div className="pt-4 border-t border-gray-100">
-                  <div className="flex justify-between items-center mb-4">
+                  <div className="mb-4">
                     <span className="text-2xl font-bold">$1,500</span>
-                    <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
                   <a 
                     href="https://calendly.com/poquillo/30-min"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block"
+                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block mb-3"
                   >
                     Learn More
                   </a>
+                  <button
+                    onClick={() => toggleExpectations('fear-to-clarity')}
+                    className="w-full border border-gray-200 text-gray-600 py-2 text-sm hover:bg-gray-50 transition"
+                  >
+                    {expandedExpectations === 'fear-to-clarity' ? 'Hide Program Expectations' : 'View Program Expectations'}
+                  </button>
+                  {expandedExpectations === 'fear-to-clarity' && (
+                    <div className="mt-4 bg-gray-50 p-4 text-sm">
+                      <h5 className="font-bold mb-3">Program Expectations:</h5>
+                      <ul className="space-y-2">
+                        <li>• Come prepared with your business ideas/concerns</li>
+                        <li>• Be open to feedback and new perspectives</li>
+                        <li>• Complete pre-session questionnaire</li>
+                        <li>• Implement action items from your clarity blueprint</li>
+                        <li>• Follow through with the 30-day plan provided</li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
@@ -250,18 +293,35 @@ const ProgramsPage = () => {
                 </ul>
                 
                 <div className="pt-4 border-t border-gray-100">
-                  <div className="flex justify-between items-center mb-4">
+                  <div className="mb-4">
                     <span className="text-2xl font-bold">$500</span>
-                    <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
                   <a 
                     href="https://calendly.com/poquillo/30-min"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block"
+                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block mb-3"
                   >
                     Learn More
                   </a>
+                  <button
+                    onClick={() => toggleExpectations('clarity-breakthrough')}
+                    className="w-full border border-gray-200 text-gray-600 py-2 text-sm hover:bg-gray-50 transition"
+                  >
+                    {expandedExpectations === 'clarity-breakthrough' ? 'Hide Program Expectations' : 'View Program Expectations'}
+                  </button>
+                  {expandedExpectations === 'clarity-breakthrough' && (
+                    <div className="mt-4 bg-gray-50 p-4 text-sm">
+                      <h5 className="font-bold mb-3">Program Expectations:</h5>
+                      <ul className="space-y-2">
+                        <li>• Have a specific business challenge in mind</li>
+                        <li>• Complete pre-session brief</li>
+                        <li>• Be ready to take immediate action</li>
+                        <li>• Implement the provided solution plan</li>
+                        <li>• Schedule follow-up call if needed</li>
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             </div>
