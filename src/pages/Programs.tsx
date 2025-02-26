@@ -402,9 +402,14 @@ const ProgramsPage = () => {
                     <div className="mt-6 pt-4 border-t border-gray-200">
                       <p className="text-sm text-gray-500 mb-4">Investment: Custom quoted based on scope</p>
                       <p className="text-gray-600 mb-4">Typically ranges from $3,000-$10,000 depending on scope</p>
-                      <button className="w-full bg-black hover:bg-gray-800 text-white py-3 transition">
+                      <a 
+                        href="https://forms.gle/6ESizVy8YX7pEHFc7"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block"
+                      >
                         Apply Now
-                      </button>
+                      </a>
                     </div>
                   </div>
                 </div>
