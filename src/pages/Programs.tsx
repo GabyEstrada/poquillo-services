@@ -95,10 +95,7 @@ const ProgramsPage = () => {
             <div className={`${(selectedTab === 'all' || selectedTab === 'starting') ? 'block' : 'hidden'} border border-gray-100 hover:border-pink-100 transition-all`}>
               <div className="bg-pink-50 h-2"></div>
               <div className="p-8">
-                <div className="flex justify-between items-start mb-6">
-                  <h3 className="text-2xl font-bold">90-Day Launch Accelerator</h3>
-                  <span className="bg-black text-white text-xs px-3 py-1">Popular</span>
-                </div>
+                <h3 className="text-2xl font-bold mb-6">90-Day Launch Accelerator</h3>
                 <p className="text-gray-600 mb-6">
                   From vision to first client with a simple, step-by-step plan that actually works.
                 </p>
