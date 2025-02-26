@@ -1,3 +1,4 @@
+<lov-code>
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -234,15 +235,111 @@ const ProgramsPage = () => {
                     {expandedExpectations === 'fear-to-clarity' ? 'Hide Program Expectations' : 'View Program Expectations'}
                   </button>
                   {expandedExpectations === 'fear-to-clarity' && (
-                    <div className="mt-4 bg-gray-50 p-4 text-sm">
-                      <h5 className="font-bold mb-3">Program Expectations:</h5>
-                      <ul className="space-y-2">
-                        <li>• Come prepared with your business ideas/concerns</li>
-                        <li>• Be open to feedback and new perspectives</li>
-                        <li>• Complete pre-session questionnaire</li>
-                        <li>• Implement action items from your clarity blueprint</li>
-                        <li>• Follow through with the 30-day plan provided</li>
-                      </ul>
+                    <div className="mt-4 bg-gray-50 p-6 text-sm">
+                      <h3 className="text-xl font-bold mb-6">Your Breakthrough Journey 🚀</h3>
+                      
+                      <div className="space-y-6">
+                        <div>
+                          <h4 className="font-bold mb-3">Phase 1: Discovery & Mindset (90-Min Deep Dive Call)</h4>
+                          <p className="mb-2">Together we'll uncover:</p>
+                          <ul className="space-y-2">
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>What's really holding you back (beyond the surface fears)</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Your unique zones of genius (they're bigger than you think!)</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>The impact you truly want to make</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Which of your skills light you up the most</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Where your confidence needs strengthening</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>What success looks like for YOU</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold mb-3">Phase 2: Your Custom Clarity Blueprint</h4>
+                          <p className="mb-2">I'll create your complete clarity plan including:</p>
+                          <ul className="space-y-2">
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Ideal Client Profile & Where to Find Them</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Your Signature Service Framework</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Unique Selling Proposition</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Pricing Strategy That Feels Good</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Simple Marketing Message Guide</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>30-Day Confidence-Building Plan</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold mb-3">Phase 3: Implementation Support</h4>
+                          <ul className="space-y-2">
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Complete Digital Delivery of All Materials</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Optional 60-Minute Walkthrough Call</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Implementation Guide & Templates</span>
+                            </li>
+                            <li className="flex items-start">
+                              <span className="text-pink-500 mr-2">✨</span>
+                              <span>Purchase coaching sessions with me (optional)</span>
+                            </li>
+                          </ul>
+                        </div>
+                        
+                        <div>
+                          <h4 className="font-bold mb-3">How I Make It Simple 🌟</h4>
+                          <ol className="space-y-2 list-decimal pl-5">
+                            <li>Say "No More" to Fear (purchase this listing)</li>
+                            <li>Complete the Fear-to-Clarity Assessment (sent via email after purchase)</li>
+                            <li>Join me for your 90-minute breakthrough session</li>
+                            <li>Receive your complete clarity blueprint (within 3 business days)</li>
+                            <li>Get support with an optional 30-min walkthrough call</li>
+                            <li>Take action with your confidence-building plan</li>
+                          </ol>
+                        </div>
+                        
+                        <div className="bg-pink-50 p-4 rounded">
+                          <h4 className="font-bold mb-3">My Promise To You ⭐</h4>
+                          <p>No generic ideal client exercises or "just push through the fear" advice. I'll help you dig deep to uncover what's really holding you back and get specific about who you're meant to serve. This is about finding clarity that feels authentic to YOU.</p>
+                        </div>
+                      </div>
                     </div>
                   )}
                 </div>
@@ -582,139 +679,5 @@ const ProgramsPage = () => {
                   Working with Gabriela was great! She was thoughtful and very communicative. She made sure to send me several iterations of designs and was very open to feedback. I highly recommend working with her for all your needs!
                 </p>
                 <div className="flex items-center">
-                  <div className="w-12 h-12 bg-soft-purple rounded-full mr-4"></div>
-                  <div>
-                    <div className="font-bold">Stephanie C.</div>
-                    <div className="text-gray-500 text-sm">Coconut Coaching</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-            
-            <div className="bg-gray-50 p-8 relative">
-              <div className="text-5xl text-pink-200 absolute top-4 left-6">"</div>
-              <div className="relative">
-                <p className="text-gray-700 italic mb-6 pt-6">
-                  Thank you so much, Gaby, for everything you do. I'm so grateful my mom shared your information with me. You've been such a blessing—thank you!
-                </p>
-                <div className="flex items-center">
-                  <div className="w-12 h-12 bg-soft-pink rounded-full mr-4"></div>
-                  <div>
-                    <div className="font-bold">Dr. Whitley C.</div>
-                    <div className="text-gray-500 text-sm">Vital Family Chiropractic</div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      
-      {/* FAQ Section */}
-      <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
-        <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">
-              Common Questions
-            </h2>
-            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              Everything you need to know before getting started.
-            </p>
-          </div>
-          
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-            {[
-              {
-                question: "How do I know which program is right for me?",
-                answer: "The best program depends on your business stage and specific needs. If you're just starting out, our 90-Day Launch Accelerator or Fear to Clarity Session are ideal. For established businesses facing specific challenges, try our Clarity Breakthrough Session or Custom Implementation Support. Still unsure? Book a free discovery call and we'll help you decide."
-              },
-              {
-                question: "What makes your approach different?",
-                answer: "We focus on simplicity and implementation rather than complicated strategies or theory. Our programs are designed to give you clear, actionable steps that feel doable. We also bring a bicultural perspective, making our guidance especially valuable for entrepreneurs from diverse backgrounds."
-              },
-              {
-                question: "Do I need to have a business idea already?",
-                answer: "For most programs, yes. Our Fear to Clarity Session can help if you have multiple ideas and need to choose one. For our Launch Accelerator, you should have at least a general direction for your business, though we'll help refine and clarify it."
-              },
-              {
-                question: "Can I get a refund if I'm not satisfied?",
-                answer: "We don't offer refunds, as our programs require your active participation to succeed. However, we're deeply committed to your success and will work with you to ensure you get value from our programs. If you're on the fence, start with a smaller program like our Clarity Breakthrough Session to experience our approach."
-              }
-            ].map((item, index) => (
-              <div key={index} className="bg-white p-6 border border-gray-100">
-                <h3 className="text-xl font-bold mb-3">{item.question}</h3>
-                <p className="text-gray-600">{item.answer}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-      
-      {/* Final CTA */}
-      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-black text-white">
-        <div className="max-w-5xl mx-auto text-center">
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
-            Ready to transform your business?
-          </h2>
-          <p className="text-xl mb-10 max-w-3xl mx-auto">
-            Let's find the right program to help you move from confusion to clarity and confident action.
-          </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
-            <button className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 transition duration-300 text-lg">
-              Book Your Discovery Call
-            </button>
-          </div>
-        </div>
-      </section>
-      
-      {/* Footer */}
-      <footer className="py-12 px-6 md:px-12 lg:px-24 bg-gray-50 text-center md:text-left">
-        <div className="max-w-7xl mx-auto">
-          <div className="flex flex-col md:flex-row justify-between">
-            <div className="mb-8 md:mb-0">
-              <div className="flex items-center justify-center md:justify-start">
-                <span className="text-black font-bold text-xl">Poquillo</span>
-                <span className="ml-2 text-xs bg-pink-100 text-pink-600 px-2 py-1 rounded-sm">by Gaby Estrada</span>
-              </div>
-              <p className="text-gray-600 mt-4 max-w-xs mx-auto md:mx-0">
-                Helping women entrepreneurs build confidence and clarity in their business journey.
-              </p>
-            </div>
-            <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
-              <div>
-                <h3 className="font-bold mb-4">Navigation</h3>
-                <ul className="space-y-2">
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Home</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Who We Serve</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Programs</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">About</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-bold mb-4">Programs</h3>
-                <ul className="space-y-2">
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</Link></li>
-                </ul>
-              </div>
-              <div>
-                <h3 className="font-bold mb-4">Connect</h3>
-                <ul className="space-y-2">
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Instagram</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">LinkedIn</Link></li>
-                  <li><Link to="#" className="text-gray-600 hover:text-pink-500 transition">Email</Link></li>
-                </ul>
-              </div>
-            </div>
-          </div>
-          <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500 text-sm">
-            <p>© 2025 Poquillo. All rights reserved.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
-  );
-};
-
-export default ProgramsPage;
+                  <div style={{ backgroundColor: '#E5DEFF' }} className="w-12 h-12 rounded-full mr-4"></div>
+                  
