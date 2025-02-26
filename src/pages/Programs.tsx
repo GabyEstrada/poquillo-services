@@ -207,8 +207,11 @@ const ProgramsPage = () => {
             </div>
             
             {/* Program 3 */}
-            <div className={`${(selectedTab === 'all' || selectedTab === 'growing') ? 'block' : 'hidden'} border border-gray-100 hover:border-pink-100 transition-all`}>
+            <div className={`${(selectedTab === 'all' || selectedTab === 'growing') ? 'block' : 'hidden'} border border-gray-100 hover:border-pink-100 transition-all relative`}>
               <div className="bg-pink-50 h-2"></div>
+              <div className="absolute top-4 right-4">
+                <span className="bg-black text-white text-xs px-3 py-1 rounded">Popular</span>
+              </div>
               <div className="p-8">
                 <h3 className="text-2xl font-bold mb-6">Business Clarity Breakthrough</h3>
                 <p className="text-gray-600 mb-6">
