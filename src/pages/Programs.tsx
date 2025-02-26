@@ -134,7 +134,7 @@ const ProgramsPage = () => {
                 
                 <div className="pt-4 border-t border-gray-100">
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-2xl font-bold">$2,997</span>
+                    <span className="text-2xl font-bold">$2,500</span>
                     <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
                   <a 
@@ -191,7 +191,7 @@ const ProgramsPage = () => {
                 
                 <div className="pt-4 border-t border-gray-100">
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-2xl font-bold">$997</span>
+                    <span className="text-2xl font-bold">$1,500</span>
                     <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
                   <a 
@@ -251,7 +251,7 @@ const ProgramsPage = () => {
                 
                 <div className="pt-4 border-t border-gray-100">
                   <div className="flex justify-between items-center mb-4">
-                    <span className="text-2xl font-bold">$300</span>
+                    <span className="text-2xl font-bold">$500</span>
                     <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
                   <a 
