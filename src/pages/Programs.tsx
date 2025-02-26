@@ -140,9 +140,14 @@ const ProgramsPage = () => {
                     <span className="text-2xl font-bold">$2,997</span>
                     <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
-                  <button className="w-full bg-black hover:bg-gray-800 text-white py-3 transition">
+                  <a 
+                    href="https://calendly.com/poquillo/30-min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block"
+                  >
                     Learn More
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -178,8 +183,7 @@ const ProgramsPage = () => {
                     "Custom clarity blueprint",
                     "Ideal client profile & service framework",
                     "Pricing strategy that feels right",
-                    "30-day confidence-building plan",
-                    "7 days of implementation support"
+                    "30-day confidence-building plan"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-pink-500 mr-3">✓</span>
@@ -193,9 +197,14 @@ const ProgramsPage = () => {
                     <span className="text-2xl font-bold">$997</span>
                     <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
-                  <button className="w-full bg-black hover:bg-gray-800 text-white py-3 transition">
+                  <a 
+                    href="https://calendly.com/poquillo/30-min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block"
+                  >
                     Learn More
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -231,8 +240,7 @@ const ProgramsPage = () => {
                     "Custom solution plan",
                     "Implementation timeline",
                     "Recommended tools & resources",
-                    "Optional 15-min walkthrough call",
-                    "7 days of quick support via DM"
+                    "Optional 15-min walkthrough call"
                   ].map((item, index) => (
                     <li key={index} className="flex items-start">
                       <span className="text-pink-500 mr-3">✓</span>
@@ -246,9 +254,14 @@ const ProgramsPage = () => {
                     <span className="text-2xl font-bold">$300</span>
                     <span className="text-gray-500 text-sm">Payment plans available</span>
                   </div>
-                  <button className="w-full bg-black hover:bg-gray-800 text-white py-3 transition">
+                  <a 
+                    href="https://calendly.com/poquillo/30-min"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="w-full bg-black hover:bg-gray-800 text-white py-3 transition text-center block"
+                  >
                     Learn More
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
