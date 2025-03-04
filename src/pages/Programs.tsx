@@ -263,11 +263,11 @@ const ProgramsPage = () => {
             <div className="text-6xl text-pink-500 opacity-30 absolute top-8 left-8">"</div>
             <div className="relative">
               <p className="text-xl italic mb-6">
-                Gaby is a natural leader. Before we started working on the consulting project, she initiated organizing communication and best practices within our group. It's evident that working closely with others is something she holds close to her heart and is very passionate about. Throughout the project, she always went the extra mile to ensure our client was being heard and all aspects of their needs were being met by us.
+                Working with Gabriela was great! She was thoughtful and very communicative. She made sure to send me several iterations of designs and was very open to feedback. I highly recommend working with her for all your needs!
               </p>
               <div className="inline-block">
-                <div className="font-bold">Amber H.</div>
-                <div className="text-pink-300 text-sm">Colleague</div>
+                <div className="font-bold">Stephanie C.</div>
+                <div className="text-pink-300 text-sm">Coconut Coaching</div>
               </div>
             </div>
           </div>
