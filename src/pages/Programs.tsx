@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -120,7 +121,7 @@ const ProgramsPage = () => {
                 rel="noopener noreferrer" 
                 className="bg-pink-500 hover:bg-pink-700 text-white font-medium py-3 px-6 transition duration-300 inline-block"
               >
-                Learn More
+                Schedule a Call
               </a>
             </div>
             
@@ -142,7 +143,7 @@ const ProgramsPage = () => {
                 rel="noopener noreferrer" 
                 className="bg-pink-500 hover:bg-pink-700 text-white font-medium py-3 px-6 transition duration-300 inline-block"
               >
-                Book Now
+                Schedule a Call
               </a>
             </div>
             
@@ -164,7 +165,23 @@ const ProgramsPage = () => {
                 rel="noopener noreferrer" 
                 className="bg-pink-500 hover:bg-pink-700 text-white font-medium py-3 px-6 transition duration-300 inline-block"
               >
-                Get Support
+                Schedule a Call
+              </a>
+            </div>
+            
+            {/* New Section - Call to Action */}
+            <div className="bg-white border border-gray-100 p-8 flex flex-col justify-center">
+              <h2 className="text-2xl font-bold mb-4">Ready to transform your business?</h2>
+              <p className="text-gray-600 mb-6">
+                Let's find the right program to help you move from confusion to clarity and confident action.
+              </p>
+              <a 
+                href="https://calendly.com/poquillo/30-min" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 transition duration-300 inline-block text-center"
+              >
+                Book Your Discovery Call
               </a>
             </div>
           </div>
