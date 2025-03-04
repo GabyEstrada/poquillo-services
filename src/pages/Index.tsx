@@ -37,8 +37,8 @@ const Index = () => {
         <div className="hidden md:flex space-x-8">
           <Link to="/" className="text-gray-900 hover:text-pink-500 transition">Home</Link>
           <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
-          <Link to="#" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
-          <Link to="#" className="text-gray-900 hover:text-pink-500 transition">About</Link>
+          <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
+          <Link to="/about" className="text-gray-900 hover:text-pink-500 transition">About</Link>
           <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
         </div>
       </nav>
@@ -49,8 +49,8 @@ const Index = () => {
           <div className="flex flex-col space-y-4">
             <Link to="/" className="text-gray-900 hover:text-pink-500 transition">Home</Link>
             <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
-            <Link to="#" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
-            <Link to="#" className="text-gray-900 hover:text-pink-500 transition">About</Link>
+            <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
+            <Link to="/about" className="text-gray-900 hover:text-pink-500 transition">About</Link>
             <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
           </div>
         </div>
@@ -299,18 +299,18 @@ const Index = () => {
               <div>
                 <h3 className="font-bold mb-4">Navigation</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Home</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Who We Serve</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Programs</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">About</a></li>
+                  <li><Link to="/" className="text-gray-600 hover:text-pink-500 transition">Home</Link></li>
+                  <li><Link to="/who-we-serve" className="text-gray-600 hover:text-pink-500 transition">Who We Serve</Link></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Programs</Link></li>
+                  <li><Link to="/about" className="text-gray-600 hover:text-pink-500 transition">About</Link></li>
                 </ul>
               </div>
               <div>
                 <h3 className="font-bold mb-4">Programs</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</a></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</Link></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</Link></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</Link></li>
                 </ul>
               </div>
               <div>
