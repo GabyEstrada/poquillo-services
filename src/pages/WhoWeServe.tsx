@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -27,9 +28,16 @@ const WhoWeServePage = () => {
         <div className="hidden md:flex space-x-8">
           <Link to="/" className="text-gray-900 hover:text-pink-500 transition">Home</Link>
           <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition font-bold border-b-2 border-pink-500">Who We Serve</Link>
-          <Link to="#" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
-          <Link to="#" className="text-gray-900 hover:text-pink-500 transition">About</Link>
-          <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
+          <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
+          <Link to="/about" className="text-gray-900 hover:text-pink-500 transition">About</Link>
+          <a 
+            href="https://calendly.com/poquillo/30-min" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
+          >
+            Work With Me
+          </a>
         </div>
       </nav>
       
@@ -39,9 +47,16 @@ const WhoWeServePage = () => {
           <div className="flex flex-col space-y-4">
             <Link to="/" className="text-gray-900 hover:text-pink-500 transition">Home</Link>
             <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition font-bold">Who We Serve</Link>
-            <Link to="#" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
-            <Link to="#" className="text-gray-900 hover:text-pink-500 transition">About</Link>
-            <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
+            <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
+            <Link to="/about" className="text-gray-900 hover:text-pink-500 transition">About</Link>
+            <a 
+              href="https://calendly.com/poquillo/30-min" 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
+            >
+              Work With Me
+            </a>
           </div>
         </div>
       )}
