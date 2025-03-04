@@ -247,7 +247,7 @@ const ProgramsPage = () => {
               <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">
                 5
               </div>
-              <h3 className="text-xl font-bold mt-6 mb-3 text-center">Next Steps</h3>
+              <h3 className="text-xl font-bold mt-6 mb-3 text-center">Wrap-Up Call</h3>
               <p className="text-gray-600 text-center">
                 We'll review the results, finalize next steps, and make sure you're set for continued success.
               </p>
