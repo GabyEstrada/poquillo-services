@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -29,7 +30,14 @@ const AboutPage = () => {
           <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
           <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
           <Link to="/about" className="text-gray-900 hover:text-pink-500 transition font-bold border-b-2 border-pink-500">About</Link>
-          <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
+          <a 
+            href="https://calendly.com/poquillo/30-min" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
+          >
+            Work With Me
+          </a>
         </div>
       </nav>
       
@@ -41,7 +49,14 @@ const AboutPage = () => {
             <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
             <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
             <Link to="/about" className="text-gray-900 hover:text-pink-500 transition font-bold">About</Link>
-            <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
+            <a 
+              href="https://calendly.com/poquillo/30-min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
+            >
+              Work With Me
+            </a>
           </div>
         </div>
       )}
@@ -353,12 +368,20 @@ const AboutPage = () => {
             Ready to make your business dream a reality? I'd love to chat and explore how we can work together.
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <button className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg">
+            <a 
+              href="https://calendly.com/poquillo/30-min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg"
+            >
               Book a Discovery Call
-            </button>
-            <button className="bg-white border border-black text-black font-medium py-3 px-8 transition duration-300 hover:bg-gray-50 text-lg">
+            </a>
+            <Link 
+              to="/programs" 
+              className="bg-white border border-black text-black font-medium py-3 px-8 transition duration-300 hover:bg-gray-50 text-lg"
+            >
               Browse My Programs
-            </button>
+            </Link>
           </div>
         </div>
       </section>
@@ -389,9 +412,9 @@ const AboutPage = () => {
               <div>
                 <h3 className="font-bold mb-4">Programs</h3>
                 <ul className="space-y-2">
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</a></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</Link></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</Link></li>
+                  <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</Link></li>
                 </ul>
               </div>
               <div>
