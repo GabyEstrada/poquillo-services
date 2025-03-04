@@ -60,29 +60,16 @@ const ProgramsPage = () => {
         </div>
       )}
       
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
-        <div className="md:w-1/2 relative">
-          <div className="absolute -top-6 -left-6 w-32 h-32 bg-pink-100 rounded-full opacity-70"></div>
-          <div className="relative">
-            <div className="w-full h-96 bg-gray-200 overflow-hidden rounded-full">
-              <img 
-                src="/lovable-uploads/c8f79299-5799-4991-a09f-985919ca981f.png"
-                alt="Gaby Estrada, founder of Poquillo" 
-                className="w-full h-full object-cover"
-              />
-            </div>
-          </div>
-          <div className="absolute -bottom-6 -right-6 w-32 h-32 bg-black opacity-10"></div>
-        </div>
-        <div className="md:w-1/2 space-y-6">
+      {/* Hero Section - Modified without image */}
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
+        <div className="space-y-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
             My <span className="text-pink-500">Programs</span>
           </h1>
-          <p className="text-xl text-gray-600">
+          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Ready to turn your business dreams into reality?
           </p>
-          <p className="text-lg text-gray-600">
+          <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             I offer a range of programs designed to help you gain clarity, build solid systems, and create marketing that feels authentic.
           </p>
           <div className="pt-4">
