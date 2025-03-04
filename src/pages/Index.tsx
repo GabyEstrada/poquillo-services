@@ -1,3 +1,4 @@
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useToast } from "@/hooks/use-toast";
@@ -39,7 +40,14 @@ const Index = () => {
           <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
           <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
           <Link to="/about" className="text-gray-900 hover:text-pink-500 transition">About</Link>
-          <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
+          <a 
+            href="https://calendly.com/poquillo/30-min" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
+          >
+            Work With Me
+          </a>
         </div>
       </nav>
       
@@ -51,7 +59,14 @@ const Index = () => {
             <Link to="/who-we-serve" className="text-gray-900 hover:text-pink-500 transition">Who We Serve</Link>
             <Link to="/programs" className="text-gray-900 hover:text-pink-500 transition">Programs</Link>
             <Link to="/about" className="text-gray-900 hover:text-pink-500 transition">About</Link>
-            <button className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition">Work With Me</button>
+            <a 
+              href="https://calendly.com/poquillo/30-min" 
+              target="_blank" 
+              rel="noopener noreferrer" 
+              className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
+            >
+              Work With Me
+            </a>
           </div>
         </div>
       )}
