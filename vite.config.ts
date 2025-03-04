@@ -24,5 +24,7 @@ export default defineConfig(({ mode }) => ({
   build: {
     outDir: 'dist',
     assetsDir: 'assets',
-  }
+  },
+  // Add base path - important for GitHub Pages deployment
+  base: './'
 }));
