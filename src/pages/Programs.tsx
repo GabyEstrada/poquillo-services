@@ -1,4 +1,3 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -60,7 +59,7 @@ const ProgramsPage = () => {
           </div>
         </div>
       )}
-
+      
       {/* Hero Section */}
       <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 flex flex-col md:flex-row items-center gap-12 max-w-7xl mx-auto">
         <div className="md:w-1/2 relative">
@@ -183,6 +182,75 @@ const ProgramsPage = () => {
               >
                 Book Your Discovery Call
               </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      
+      {/* Our Simple Process Section */}
+      <section className="py-16 px-6 md:px-12 lg:px-24">
+        <div className="max-w-7xl mx-auto">
+          <div className="text-center mb-12">
+            <h2 className="text-3xl font-bold mb-4">Our Simple Process</h2>
+            <p className="text-lg text-gray-600 max-w-3xl mx-auto">
+              No matter which program you choose, expect a straightforward experience designed for your success.
+            </p>
+          </div>
+          
+          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+            {/* Step 1 */}
+            <div className="bg-white border border-gray-100 p-6 relative">
+              <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">
+                1
+              </div>
+              <h3 className="text-xl font-bold mt-6 mb-3 text-center">Discovery Call</h3>
+              <p className="text-gray-600 text-center">
+                We'll uncover your challenges, goals, and vision to understand exactly where your business stands.
+              </p>
+            </div>
+            
+            {/* Step 2 */}
+            <div className="bg-white border border-gray-100 p-6 relative">
+              <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">
+                2
+              </div>
+              <h3 className="text-xl font-bold mt-6 mb-3 text-center">Kickoff Call</h3>
+              <p className="text-gray-600 text-center">
+                Together, we'll map out a personalized action plan tailored to your needs.
+              </p>
+            </div>
+            
+            {/* Step 3 */}
+            <div className="bg-white border border-gray-100 p-6 relative">
+              <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">
+                3
+              </div>
+              <h3 className="text-xl font-bold mt-6 mb-3 text-center">Weekly Working Sessions</h3>
+              <p className="text-gray-600 text-center">
+                Consistent progress with actionable steps, guidance, and real-time problem-solving.
+              </p>
+            </div>
+            
+            {/* Step 4 */}
+            <div className="bg-white border border-gray-100 p-6 relative">
+              <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">
+                4
+              </div>
+              <h3 className="text-xl font-bold mt-6 mb-3 text-center">Project Delivery</h3>
+              <p className="text-gray-600 text-center">
+                Receive tangible results: a streamlined process, clear strategy, or completed deliverable.
+              </p>
+            </div>
+            
+            {/* Step 5 */}
+            <div className="bg-white border border-gray-100 p-6 relative">
+              <div className="absolute -top-5 left-1/2 transform -translate-x-1/2 bg-pink-500 text-white w-10 h-10 rounded-full flex items-center justify-center text-xl font-bold">
+                5
+              </div>
+              <h3 className="text-xl font-bold mt-6 mb-3 text-center">Wrap-Up Call</h3>
+              <p className="text-gray-600 text-center">
+                We'll review the results, finalize next steps, and make sure you're set for continued success.
+              </p>
             </div>
           </div>
         </div>
