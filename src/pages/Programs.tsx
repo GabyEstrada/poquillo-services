@@ -1,4 +1,4 @@
-<lov-code>
+
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
@@ -705,4 +705,61 @@ const ProgramsPage = () => {
                             "Project-based implementation",
                             "Monthly strategy & support",
                             "Intensive implementation days",
-                            "Ongoing business coaching
+                            "Ongoing business coaching"
+                          ].map((item, index) => (
+                            <li key={index} className="flex items-start">
+                              <span className="text-pink-500 mr-3">✓</span>
+                              <span className="text-gray-700">{item}</span>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    </div>
+                    
+                    <p className="text-gray-600 mb-6">
+                      Because these services are highly customized, we'll begin with a complimentary consultation to discuss your specific needs and how we can best support your business growth.
+                    </p>
+                    
+                    <a 
+                      href="https://calendly.com/poquillo/30-min"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="bg-black hover:bg-gray-800 text-white px-6 py-3 transition inline-block"
+                    >
+                      Schedule Consultation
+                    </a>
+                  </div>
+                  
+                  <div className="lg:w-1/3 bg-gray-50 p-6">
+                    <h4 className="font-bold text-lg mb-4">How We Work Together</h4>
+                    <ol className="list-decimal pl-5 space-y-4 text-gray-600">
+                      <li>
+                        <strong>Discovery Call:</strong> We'll discuss your business, challenges, and goals.
+                      </li>
+                      <li>
+                        <strong>Custom Proposal:</strong> You'll receive a tailored solution designed specifically for your business.
+                      </li>
+                      <li>
+                        <strong>Implementation:</strong> Together, we'll put your plan into action with expert guidance every step of the way.
+                      </li>
+                      <li>
+                        <strong>Measurement & Refinement:</strong> We'll track results and adjust as needed to ensure your success.
+                      </li>
+                    </ol>
+                    <div className="mt-6 pt-6 border-t border-gray-200">
+                      <p className="text-gray-600 italic">
+                        "Working with Gaby transformed how I approach my business. Her systems and strategies helped me double my client base while actually working fewer hours." — Maria S.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+  );
+};
+
+export default ProgramsPage;
