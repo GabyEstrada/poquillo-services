@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useToast } from "@/hooks/use-toast";
+import { Youtube } from "lucide-react";
 
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -317,7 +318,17 @@ const Index = () => {
                 <ul className="space-y-2">
                   <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Instagram</a></li>
                   <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">LinkedIn</a></li>
-                  <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">Email</a></li>
+                  <li>
+                    <a 
+                      href="https://www.youtube.com/@poquillo" 
+                      target="_blank" 
+                      rel="noopener noreferrer" 
+                      className="text-gray-600 hover:text-pink-500 transition flex items-center"
+                    >
+                      <Youtube size={16} className="mr-1" />
+                      YouTube
+                    </a>
+                  </li>
                 </ul>
               </div>
             </div>
