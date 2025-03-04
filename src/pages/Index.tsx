@@ -323,9 +323,8 @@ const Index = () => {
                       href="https://www.youtube.com/@poquillo" 
                       target="_blank" 
                       rel="noopener noreferrer" 
-                      className="text-gray-600 hover:text-pink-500 transition flex items-center"
+                      className="text-gray-600 hover:text-pink-500 transition"
                     >
-                      <Youtube size={16} className="mr-1" />
                       YouTube
                     </a>
                   </li>
