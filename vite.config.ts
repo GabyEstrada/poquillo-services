@@ -32,6 +32,6 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
-  // Set the base path specifically for GitHub Pages - use your repo name
-  base: '/poquillo-service-showcase/',
+  // Set the base path specifically for GitHub Pages
+  base: './',
 }));
