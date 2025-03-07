@@ -31,8 +31,6 @@ export default defineConfig(({ mode }) => ({
       },
     },
   },
-  // Set the base path for GitHub Pages - make sure this matches your repository name
-  // If your site is deployed at https://username.github.io/repo-name/, use '/repo-name/'
-  // If your site is deployed at the root (https://username.github.io/), use '/'
-  base: './'
+  // Set the base path specifically for GitHub Pages - use your repo name
+  base: '/poquillo-service-showcase/',
 }));
