@@ -23,8 +23,9 @@ export default defineConfig(({ mode }) => ({
   // Ensure SPA routing works properly in production
   build: {
     outDir: 'dist',
+    emptyOutDir: true,
+    minify: true,
     assetsDir: 'assets',
-    // Generate a 404 page for GitHub Pages
     rollupOptions: {
       output: {
         manualChunks: undefined,
