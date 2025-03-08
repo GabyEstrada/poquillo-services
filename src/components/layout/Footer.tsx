@@ -39,7 +39,26 @@ const Footer: React.FC = () => {
               <ul className="space-y-2">
                 <li><a href="https://www.instagram.com/poquillo1212/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition">Instagram</a></li>
                 <li><a href="https://www.linkedin.com/company/poquillo/" target="_blank" rel="noopener noreferrer" className="text-gray-600 hover:text-pink-500 transition">LinkedIn</a></li>
-                <li><a href="#" className="text-gray-600 hover:text-pink-500 transition">YouTube</a></li>
+                <li>
+                  <a 
+                    href="https://www.youtube.com/@poquillo" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-600 hover:text-pink-500 transition"
+                  >
+                    YouTube
+                  </a>
+                </li>
+                <li>
+                  <a 
+                    href="https://poquillo.me/" 
+                    target="_blank" 
+                    rel="noopener noreferrer" 
+                    className="text-gray-600 hover:text-pink-500 transition"
+                  >
+                    Blog
+                  </a>
+                </li>
               </ul>
             </div>
           </div>
