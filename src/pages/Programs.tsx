@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -73,9 +72,9 @@ const ProgramsPage: React.FC = () => {
 
   // Testimonial data
   const testimonial = {
-    quote: "Working with Gabriela was great! She was thoughtful and very communicative. She made sure to send me several iterations of designs and was very open to feedback. I highly recommend working with her for all your needs!",
-    name: "Stephanie C.",
-    company: "Coconut Coaching"
+    quote: "Thank you so much, Gaby, for everything you do. I'm so grateful my mom shared your information with me. You've been such a blessing—thank you!",
+    name: "Dr. Whitley C.",
+    company: "Vital Family Chiropractic"
   };
 
   return (
