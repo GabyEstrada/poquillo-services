@@ -9,15 +9,16 @@ interface TestimonialCardProps {
 
 const TestimonialCard: React.FC<TestimonialCardProps> = ({ quote, name, company }) => {
   return (
-    <div className="bg-black p-12 text-white text-center relative">
-      <div className="text-6xl text-pink-500 opacity-30 absolute top-8 left-8">"</div>
-      <div className="relative">
-        <p className="text-xl italic mb-6">
-          {quote}
-        </p>
-        <div className="inline-block">
+    <div className="bg-white p-8 md:p-12 shadow-sm">
+      <div className="mb-6 text-5xl text-pink-200">"</div>
+      <p className="text-xl text-gray-700 mb-8">
+        {quote}
+      </p>
+      <div className="flex items-center justify-center">
+        <div className="w-12 h-12 bg-pink-500 rounded-full mr-4"></div>
+        <div className="text-left">
           <div className="font-bold">{name}</div>
-          <div className="text-pink-300 text-sm">{company}</div>
+          {company && <div className="text-gray-500">{company}</div>}
         </div>
       </div>
     </div>

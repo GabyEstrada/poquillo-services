@@ -1,8 +1,8 @@
-
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { useToast } from "@/hooks/use-toast";
 import { Youtube } from "lucide-react";
+import TestimonialCard from '@/components/common/TestimonialCard';
 
 const Index = () => {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -209,19 +209,11 @@ const Index = () => {
             From Overwhelm to "I've Got This!"
           </h2>
           
-          <div className="bg-white p-8 md:p-12 shadow-sm">
-            <div className="mb-6 text-5xl text-pink-200">"</div>
-            <p className="text-xl text-gray-700 mb-8">
-              Thank you so much, Gaby, for everything you do. I'm so grateful my mom shared your information with me. You've been such a blessing—thank you!
-            </p>
-            <div className="flex items-center justify-center">
-              <div className="w-12 h-12 bg-pink-500 rounded-full mr-4"></div>
-              <div className="text-left">
-                <div className="font-bold">Dr. Whitley C.</div>
-                <div className="text-gray-500">Vital Family Chiropractic</div>
-              </div>
-            </div>
-          </div>
+          <TestimonialCard 
+            quote="Gaby is a phenomenal business intuitive, who will take the time to get to the root of your struggles because she truly cares, and because it matters to your business. Her acumen for uncovering weaknesses and then remedying them is ON POINT. 10/10 would always recommend!"
+            name="Rebekah J."
+            company=""
+          />
         </div>
       </section>
       
