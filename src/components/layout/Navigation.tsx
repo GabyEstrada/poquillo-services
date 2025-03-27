@@ -39,7 +39,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
             href="https://poquillo.me/" 
             target="_blank" 
             rel="noopener noreferrer" 
-            className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
+            className="text-gray-700 hover:text-pink-500 transition"
           >
             Blog
           </a>
@@ -58,7 +58,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
               href="https://poquillo.me/" 
               target="_blank" 
               rel="noopener noreferrer" 
-              className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition inline-block"
+              className="text-gray-700 hover:text-pink-500 transition"
             >
               Blog
             </a>
