@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -76,13 +77,13 @@ const ProgramsPage: React.FC = () => {
     <div className="min-h-screen bg-white">
       <Navigation currentPage="programs" />
       
-      {/* Hero Section */}
-      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
-        <div className="space-y-6 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight">
+      {/* Hero Section with improved visual hierarchy */}
+      <section className="py-20 md:py-28 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto bg-gradient-to-b from-pink-50 to-white">
+        <div className="space-y-8 text-center">
+          <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
             My <span className="text-pink-500">Services</span>
           </h1>
-          <p className="text-xl text-gray-600 max-w-3xl mx-auto">
+          <p className="text-xl md:text-2xl text-gray-600 max-w-3xl mx-auto">
             Let's Find Your Business Clarity, Amiga!✨
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
@@ -91,10 +92,10 @@ const ProgramsPage: React.FC = () => {
         </div>
       </section>
       
-      {/* Program Details */}
-      <section className="py-16 px-6 md:px-12 lg:px-24 bg-gray-50">
+      {/* Program Details with improved spacing */}
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-gray-50">
         <div className="max-w-7xl mx-auto">
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 md:gap-12 lg:gap-16">
             {/* Program Cards */}
             {programs.map((program, index) => (
               <ProgramCard 
@@ -111,17 +112,17 @@ const ProgramsPage: React.FC = () => {
         </div>
       </section>
       
-      {/* Our Simple Process Section */}
-      <section className="py-16 px-6 md:px-12 lg:px-24">
+      {/* Our Simple Process Section with improved spacing */}
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24">
         <div className="max-w-7xl mx-auto">
-          <div className="text-center mb-12">
-            <h2 className="text-3xl font-bold mb-4">Our Simple Process</h2>
+          <div className="text-center mb-12 md:mb-16">
+            <h2 className="text-3xl md:text-4xl font-bold mb-4">Our Simple Process</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
               No matter which service you choose, expect a straightforward experience designed for your success.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8 md:gap-10">
             {processSteps.map((step) => (
               <ProcessStep
                 key={step.number}
@@ -134,9 +135,10 @@ const ProgramsPage: React.FC = () => {
         </div>
       </section>
       
-      {/* Testimonial Section */}
-      <section className="py-16 px-6 md:px-12 lg:px-24">
+      {/* Testimonial Section with enhanced styling */}
+      <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-pink-50">
         <div className="max-w-5xl mx-auto">
+          <h2 className="text-3xl font-bold text-center mb-10">What Clients Say</h2>
           <TestimonialCard
             quote={testimonial.quote}
             name={testimonial.name}
