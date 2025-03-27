@@ -250,7 +250,7 @@ const WhoWeServePage = () => {
         </div>
       </section>
       
-      {/* Final CTA */}
+      {/* Final CTA - Modified as requested */}
       <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 bg-black text-white">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl md:text-4xl font-bold mb-6">
@@ -259,21 +259,13 @@ const WhoWeServePage = () => {
           <p className="text-xl mb-10 max-w-3xl mx-auto">
             Let's find the right program to help you move from where you are to where you want to be.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 justify-center">
+          <div className="flex justify-center">
             <Link 
               to="/programs"
               className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-8 transition duration-300 text-lg"
             >
-              Explore Our Programs
+              Explore Our Services
             </Link>
-            <a
-              href="https://calendly.com/poquillo/30-min"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-transparent hover:bg-white hover:text-black border border-white text-white font-medium py-3 px-8 transition duration-300 text-lg"
-            >
-              Book a Discovery Call
-            </a>
           </div>
         </div>
       </section>
