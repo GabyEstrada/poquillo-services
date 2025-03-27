@@ -36,12 +36,12 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
           <Link to="/programs" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'programs' ? 'font-bold border-b-2 border-pink-500' : ''}`}>Services</Link>
           <Link to="/about" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'about' ? 'font-bold border-b-2 border-pink-500' : ''}`}>About</Link>
           <a 
-            href="https://calendly.com/poquillo/30-min" 
+            href="https://poquillo.me/" 
             target="_blank" 
             rel="noopener noreferrer" 
             className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition"
           >
-            Work With Me
+            Blog
           </a>
         </div>
       </nav>
@@ -55,12 +55,12 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
             <Link to="/programs" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'programs' ? 'font-bold' : ''}`}>Services</Link>
             <Link to="/about" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'about' ? 'font-bold' : ''}`}>About</Link>
             <a 
-              href="https://calendly.com/poquillo/30-min" 
+              href="https://poquillo.me/" 
               target="_blank" 
               rel="noopener noreferrer" 
               className="bg-black text-white px-5 py-2 hover:bg-gray-800 transition inline-block"
             >
-              Work With Me
+              Blog
             </a>
           </div>
         </div>
