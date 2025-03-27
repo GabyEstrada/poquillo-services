@@ -88,7 +88,7 @@ const ProgramsPage: React.FC = () => {
             My <span className="text-pink-500">Services</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Let's Find Your Clarity, Amiga! ✨
+            Let's Find Your Business Clarity, Amiga!✨
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Two simple ways to make business feel less complicado.
