@@ -4,7 +4,6 @@ import Footer from '../components/layout/Footer';
 import ProgramCard from '../components/programs/ProgramCard';
 import ProcessStep from '../components/programs/ProcessStep';
 import TestimonialCard from '../components/common/TestimonialCard';
-import CallToAction from '../components/common/CallToAction';
 
 const ProgramsPage: React.FC = () => {
   // Program data
@@ -145,18 +144,6 @@ const ProgramsPage: React.FC = () => {
           />
         </div>
       </section>
-      
-      {/* Connect Section */}
-      <CallToAction
-        title="Let's Connect!"
-        description="Ready to take your business to the next level? I'd love to chat and explore how we can work together."
-        primaryButtonText="Book a Discovery Call"
-        primaryButtonLink="https://calendly.com/poquillo/30-min"
-        secondaryButtonText="Learn More About Me"
-        secondaryButtonLink="/about"
-        isExternal={true}
-        isDark={true}
-      />
       
       <Footer />
     </div>
