@@ -25,12 +25,12 @@ const ProgramsPage: React.FC = () => {
       title: "Strategy Session",
       price: "$1,000",
       sessionDetails: "3-hour transformation + follow-up",
-      description: "A one-on-one session to help you gain clarity on your business goals and create a roadmap for success.",
+      description: "Transform Your Business in a Day✨\nReady for a complete business refresh?\nLet's make big moves together!",
       features: [
-        "Identify your core values",
-        "Set achievable goals",
-        "Develop a strategic plan",
-        "Overcome obstacles"
+        "Full business strategy overhaul",
+        "Custom action plan delivered after",
+        "Access to call recording for 30 days",
+        "30-min implementation check-in (w/in 30 days)"
       ]
     }
   ];

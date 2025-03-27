@@ -41,7 +41,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, price, sessionDetails,
         rel="noopener noreferrer" 
         className="bg-pink-500 hover:bg-pink-700 text-white font-medium py-3 px-6 transition duration-300 inline-block"
       >
-        Let's Chat, Amiga
+        {title === "Strategy Session" ? "Let's Transform Together" : "Let's Chat, Amiga"}
       </a>
     </div>
   );
