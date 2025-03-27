@@ -315,7 +315,7 @@ const AboutPage = () => {
         </div>
       </section>
       
-      {/* Connect Section */}
+      {/* Connect Section - Modified */}
       <section className="py-16 px-6 md:px-12 lg:px-24 bg-pink-50">
         <div className="max-w-5xl mx-auto text-center">
           <h2 className="text-3xl font-bold mb-6">
@@ -324,20 +324,12 @@ const AboutPage = () => {
           <p className="text-lg text-gray-600 max-w-3xl mx-auto mb-10">
             Ready to make your business dream a reality? I'd love to chat and explore how we can work together.
           </p>
-          <div className="flex flex-col sm:flex-row gap-4 justify-center">
-            <a 
-              href={calendlyLink}
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg"
-            >
-              Book a Discovery Call
-            </a>
+          <div className="flex justify-center">
             <Link 
               to="/programs" 
-              className="bg-white border border-black text-black font-medium py-3 px-8 transition duration-300 hover:bg-gray-50 text-lg"
+              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg"
             >
-              Browse My Programs
+              Browse My Services
             </Link>
           </div>
         </div>
