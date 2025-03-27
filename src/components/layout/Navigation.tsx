@@ -33,7 +33,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
         <div className="hidden md:flex space-x-8">
           <Link to="/" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'home' ? 'font-bold border-b-2 border-pink-500' : ''}`}>Home</Link>
           <Link to="/who-we-serve" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'who-we-serve' ? 'font-bold border-b-2 border-pink-500' : ''}`}>Who We Serve</Link>
-          <Link to="/programs" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'programs' ? 'font-bold border-b-2 border-pink-500' : ''}`}>Programs</Link>
+          <Link to="/programs" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'programs' ? 'font-bold border-b-2 border-pink-500' : ''}`}>Services</Link>
           <Link to="/about" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'about' ? 'font-bold border-b-2 border-pink-500' : ''}`}>About</Link>
           <a 
             href="https://calendly.com/poquillo/30-min" 
@@ -52,7 +52,7 @@ const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
           <div className="flex flex-col space-y-4">
             <Link to="/" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'home' ? 'font-bold' : ''}`}>Home</Link>
             <Link to="/who-we-serve" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'who-we-serve' ? 'font-bold' : ''}`}>Who We Serve</Link>
-            <Link to="/programs" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'programs' ? 'font-bold' : ''}`}>Programs</Link>
+            <Link to="/programs" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'programs' ? 'font-bold' : ''}`}>Services</Link>
             <Link to="/about" className={`text-gray-900 hover:text-pink-500 transition ${currentPage === 'about' ? 'font-bold' : ''}`}>About</Link>
             <a 
               href="https://calendly.com/poquillo/30-min" 
