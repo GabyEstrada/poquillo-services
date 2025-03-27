@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -93,16 +94,6 @@ const ProgramsPage: React.FC = () => {
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Two simple ways to make business feel less complicado.
           </p>
-          <div className="pt-4">
-            <a 
-              href="https://calendly.com/poquillo/30-min" 
-              target="_blank" 
-              rel="noopener noreferrer" 
-              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg"
-            >
-              Book a Discovery Call
-            </a>
-          </div>
         </div>
       </section>
       
