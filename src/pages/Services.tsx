@@ -85,13 +85,13 @@ const ProgramsPage: React.FC = () => {
       <section className="py-16 md:py-24 px-6 md:px-12 lg:px-24 max-w-7xl mx-auto">
         <div className="space-y-6 text-center">
           <h1 className="text-4xl md:text-5xl font-bold leading-tight">
-            My <span className="text-pink-500">Programs</span>
+            My <span className="text-pink-500">Services</span>
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
-            Ready to turn your business dreams into reality?
+            Let's Find Your Clarity, Amiga! ✨
           </p>
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-            I offer a range of programs designed to help you gain clarity, build solid systems, and create marketing that feels authentic.
+            Two simple ways to make business feel less complicado.
           </p>
           <div className="pt-4">
             <a 
