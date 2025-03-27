@@ -39,6 +39,15 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
     }
   };
   
+  // Determine the correct Calendly link based on the title of the program
+  const getCalendlyLink = () => {
+    if (title === "Strategy Session") {
+      return "https://calendly.com/poquillo/quick-consultation";
+    } else {
+      return "https://calendly.com/poquillo/quick-consultation";
+    }
+  };
+  
   return (
     <div className="bg-white border border-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
       {/* Card Header with a subtle gradient background */}
@@ -91,7 +100,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
         
         {/* Call to action button with improved styling */}
         <a 
-          href="https://calendly.com/poquillo/30-min" 
+          href={getCalendlyLink()} 
           target="_blank" 
           rel="noopener noreferrer" 
           className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-6 transition duration-300 rounded-md inline-block w-full text-center shadow-md hover:shadow-lg"
