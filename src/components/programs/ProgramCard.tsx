@@ -7,9 +7,17 @@ interface ProgramCardProps {
   sessionDetails?: string;
   description: string;
   features: string[];
+  perfectFor?: string[];
 }
 
-const ProgramCard: React.FC<ProgramCardProps> = ({ title, price, sessionDetails, description, features }) => {
+const ProgramCard: React.FC<ProgramCardProps> = ({ 
+  title, 
+  price, 
+  sessionDetails, 
+  description, 
+  features,
+  perfectFor 
+}) => {
   // Split description by newline to handle the first line separately
   const descriptionLines = description.split('\n');
   const firstLine = descriptionLines[0];
@@ -35,6 +43,18 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, price, sessionDetails,
           <li key={index}>{feature}</li>
         ))}
       </ul>
+      
+      {perfectFor && perfectFor.length > 0 && (
+        <div className="mb-6 bg-gray-50 p-4 border-l-4 border-pink-500">
+          <p className="font-semibold text-gray-800 mb-2">Perfect for:</p>
+          <ul className="list-disc list-inside text-gray-600">
+            {perfectFor.map((item, index) => (
+              <li key={index}>{item}</li>
+            ))}
+          </ul>
+        </div>
+      )}
+      
       <a 
         href="https://calendly.com/poquillo/30-min" 
         target="_blank" 

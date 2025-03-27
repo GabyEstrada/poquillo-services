@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -19,6 +20,12 @@ const ProgramsPage: React.FC = () => {
         "No prep needed - just show up",
         "One follow-up question (w/in 7 days)",
         "Practical guidance, no fluff"
+      ],
+      perfectFor: [
+        "Deciding between business ideas",
+        "Getting clear on your next step",
+        "Simplifying a confusing decision",
+        "Breaking through one roadblock"
       ]
     },
     {
@@ -31,6 +38,12 @@ const ProgramsPage: React.FC = () => {
         "Custom action plan delivered after",
         "Access to call recording for 30 days",
         "30-min implementation check-in (w/in 30 days)"
+      ],
+      perfectFor: [
+        "Revamping your business model",
+        "Creating a growth strategy",
+        "Building systems that scale",
+        "Overhauling client acquisition"
       ]
     }
   ];
@@ -103,6 +116,7 @@ const ProgramsPage: React.FC = () => {
                 sessionDetails={program.sessionDetails}
                 description={program.description}
                 features={program.features}
+                perfectFor={program.perfectFor}
               />
             ))}
           </div>
