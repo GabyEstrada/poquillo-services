@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -52,28 +51,18 @@ const ProgramsPage: React.FC = () => {
   const processSteps = [
     {
       number: 1,
-      title: "Discovery Call",
-      description: "We'll uncover your challenges, goals, and vision to understand exactly where your business stands."
+      title: "Book",
+      description: "Schedule a time that works for you using my simple online calendar."
     },
     {
       number: 2,
-      title: "Kickoff Call",
-      description: "Together, we'll map out a personalized action plan tailored to your needs."
+      title: "Chat",
+      description: "We'll meet virtually to discuss your challenges and identify the best path forward for your specific situation."
     },
     {
       number: 3,
-      title: "Recurring Working Sessions",
-      description: "Consistent progress with actionable steps, guidance, and real-time problem-solving."
-    },
-    {
-      number: 4,
-      title: "Project Delivery",
-      description: "Receive tangible results: a streamlined process, clear strategy, or completed deliverable."
-    },
-    {
-      number: 5,
-      title: "Wrap-Up Call",
-      description: "We'll review the results, finalize next steps, and make sure you're set for continued success."
+      title: "Clarity",
+      description: "Walk away with clear action steps and the confidence to implement them in your business."
     }
   ];
 
@@ -129,11 +118,11 @@ const ProgramsPage: React.FC = () => {
           <div className="text-center mb-12">
             <h2 className="text-3xl font-bold mb-4">Our Simple Process</h2>
             <p className="text-lg text-gray-600 max-w-3xl mx-auto">
-              No matter which program you choose, expect a straightforward experience designed for your success.
+              No matter which service you choose, expect a straightforward experience designed for your success.
             </p>
           </div>
           
-          <div className="grid grid-cols-1 md:grid-cols-5 gap-6">
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
             {processSteps.map((step) => (
               <ProcessStep
                 key={step.number}
