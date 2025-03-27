@@ -1,6 +1,5 @@
-
 import React from 'react';
-import { Check, Target, LightbulbIcon, MoveRight, Scale } from 'lucide-react';
+import { Check, Target, LightbulbIcon } from 'lucide-react';
 
 interface ProgramCardProps {
   title: string;
@@ -26,17 +25,15 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
   
   // Function to get appropriate icon for each "Perfect for" item
   const getIconForItem = (item: string, index: number) => {
-    // Use different icons based on content or index
-    if (item.toLowerCase().includes('idea') || item.toLowerCase().includes('deciding')) {
-      return <LightbulbIcon className="text-pink-500" size={18} />;
-    } else if (item.toLowerCase().includes('step') || item.toLowerCase().includes('next')) {
-      return <MoveRight className="text-pink-500" size={18} />;
-    } else if (item.toLowerCase().includes('scale') || item.toLowerCase().includes('growth')) {
-      return <Scale className="text-pink-500" size={18} />;
-    } else if (item.toLowerCase().includes('strategy') || item.toLowerCase().includes('model')) {
-      return <Target className="text-pink-500" size={18} />;
+    // Keep the first icon as is, use check for the rest
+    if (index === 0) {
+      if (item.toLowerCase().includes('idea') || item.toLowerCase().includes('deciding')) {
+        return <LightbulbIcon className="text-pink-500" size={18} />;
+      } else {
+        return <Target className="text-pink-500" size={18} />;
+      }
     } else {
-      // Default icon
+      // Use checkmark for all other items
       return <Check className="text-pink-500" size={18} />;
     }
   };
