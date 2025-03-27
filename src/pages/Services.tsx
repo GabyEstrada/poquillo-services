@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -10,7 +11,8 @@ const ProgramsPage: React.FC = () => {
   // Program data
   const programs = [
     {
-      title: "Launch Accelerator",
+      title: "Quick Consultation",
+      price: "$150",
       description: "A comprehensive program designed to help you launch your business with confidence and clarity.",
       features: [
         "Define your ideal client",
@@ -20,7 +22,8 @@ const ProgramsPage: React.FC = () => {
       ]
     },
     {
-      title: "Clarity Session",
+      title: "Strategy Session",
+      price: "$1,000",
       description: "A one-on-one session to help you gain clarity on your business goals and create a roadmap for success.",
       features: [
         "Identify your core values",
@@ -95,6 +98,7 @@ const ProgramsPage: React.FC = () => {
               <ProgramCard 
                 key={index}
                 title={program.title}
+                price={program.price}
                 description={program.description}
                 features={program.features}
               />
