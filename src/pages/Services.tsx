@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -28,16 +27,6 @@ const ProgramsPage: React.FC = () => {
         "Set achievable goals",
         "Develop a strategic plan",
         "Overcome obstacles"
-      ]
-    },
-    {
-      title: "Implementation Support",
-      description: "Ongoing support to help you implement your business strategies and achieve your goals.",
-      features: [
-        "Regular check-ins",
-        "Personalized guidance",
-        "Actionable feedback",
-        "Accountability"
       ]
     }
   ];
@@ -110,22 +99,6 @@ const ProgramsPage: React.FC = () => {
                 features={program.features}
               />
             ))}
-            
-            {/* Call to Action Card */}
-            <div className="bg-white border border-gray-100 p-8 flex flex-col justify-center">
-              <h2 className="text-2xl font-bold mb-4">Ready to transform your business?</h2>
-              <p className="text-gray-600 mb-6">
-                Let's find the right program to help you move from confusion to clarity and confident action.
-              </p>
-              <a 
-                href="https://calendly.com/poquillo/30-min" 
-                target="_blank" 
-                rel="noopener noreferrer" 
-                className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-6 transition duration-300 inline-block text-center"
-              >
-                Book Your Discovery Call
-              </a>
-            </div>
           </div>
         </div>
       </section>
