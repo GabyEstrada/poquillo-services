@@ -30,18 +30,10 @@ const Index = () => {
           <p className="text-xl text-gray-600">
             Practical guidance for women entrepreneurs ready to build businesses they love without the overwhelm.
           </p>
-          <div className="pt-4 flex flex-col sm:flex-row gap-4">
-            <a 
-              href="https://calendly.com/poquillo/30-min" 
-              target="_blank" 
-              rel="noopener noreferrer"
-              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg text-center"
-            >
-              Get Started
-            </a>
+          <div className="pt-4">
             <Link 
-              to="/who-we-serve"
-              className="bg-white text-black border border-black hover:bg-gray-50 font-medium py-3 px-8 transition duration-300 text-lg text-center"
+              to="/programs"
+              className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg text-center"
             >
               Learn More
             </Link>
