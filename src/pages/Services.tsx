@@ -13,6 +13,7 @@ const ProgramsPage: React.FC = () => {
     {
       title: "Quick Consultation",
       price: "$150",
+      sessionDetails: "60-minute power session",
       description: "A comprehensive program designed to help you launch your business with confidence and clarity.",
       features: [
         "Define your ideal client",
@@ -24,6 +25,7 @@ const ProgramsPage: React.FC = () => {
     {
       title: "Strategy Session",
       price: "$1,000",
+      sessionDetails: "3-hour transformation + follow-up",
       description: "A one-on-one session to help you gain clarity on your business goals and create a roadmap for success.",
       features: [
         "Identify your core values",
@@ -99,6 +101,7 @@ const ProgramsPage: React.FC = () => {
                 key={index}
                 title={program.title}
                 price={program.price}
+                sessionDetails={program.sessionDetails}
                 description={program.description}
                 features={program.features}
               />

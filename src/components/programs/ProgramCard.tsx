@@ -4,16 +4,20 @@ import React from 'react';
 interface ProgramCardProps {
   title: string;
   price?: string;
+  sessionDetails?: string;
   description: string;
   features: string[];
 }
 
-const ProgramCard: React.FC<ProgramCardProps> = ({ title, price, description, features }) => {
+const ProgramCard: React.FC<ProgramCardProps> = ({ title, price, sessionDetails, description, features }) => {
   return (
     <div className="bg-white border border-gray-100 p-8">
       <h2 className="text-2xl font-bold mb-1">{title}</h2>
       {price && (
-        <p className="text-pink-500 font-semibold mb-4">{price}</p>
+        <p className="text-pink-500 font-semibold mb-1">{price}</p>
+      )}
+      {sessionDetails && (
+        <p className="text-gray-500 italic text-sm mb-4">{sessionDetails}</p>
       )}
       <p className="text-gray-600 mb-6">
         {description}
