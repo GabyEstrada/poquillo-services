@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Check, Target, LightbulbIcon, MoveRight, Scale } from 'lucide-react';
 
 interface ProgramCardProps {
   title: string;
@@ -23,6 +24,23 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
   const firstLine = descriptionLines[0];
   const restOfDescription = descriptionLines.slice(1).join('\n');
   
+  // Function to get appropriate icon for each "Perfect for" item
+  const getIconForItem = (item: string, index: number) => {
+    // Use different icons based on content or index
+    if (item.toLowerCase().includes('idea') || item.toLowerCase().includes('deciding')) {
+      return <LightbulbIcon className="text-pink-500" size={18} />;
+    } else if (item.toLowerCase().includes('step') || item.toLowerCase().includes('next')) {
+      return <MoveRight className="text-pink-500" size={18} />;
+    } else if (item.toLowerCase().includes('scale') || item.toLowerCase().includes('growth')) {
+      return <Scale className="text-pink-500" size={18} />;
+    } else if (item.toLowerCase().includes('strategy') || item.toLowerCase().includes('model')) {
+      return <Target className="text-pink-500" size={18} />;
+    } else {
+      // Default icon
+      return <Check className="text-pink-500" size={18} />;
+    }
+  };
+  
   return (
     <div className="bg-white border border-gray-100 p-8">
       <h2 className="text-2xl font-bold mb-1">{title}</h2>
@@ -45,11 +63,14 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
       </ul>
       
       {perfectFor && perfectFor.length > 0 && (
-        <div className="mb-6 bg-gray-50 p-4 border-l-4 border-pink-500">
-          <p className="font-semibold text-gray-800 mb-2">Perfect for:</p>
-          <ul className="list-disc list-inside text-gray-600">
+        <div className="mb-6 bg-gray-50 p-4 border-l-4 border-pink-500 rounded">
+          <p className="font-semibold text-gray-800 mb-3">Perfect for:</p>
+          <ul className="space-y-3">
             {perfectFor.map((item, index) => (
-              <li key={index}>{item}</li>
+              <li key={index} className="flex items-start">
+                <span className="mr-2 mt-0.5">{getIconForItem(item, index)}</span>
+                <span className="text-gray-700">{item}</span>
+              </li>
             ))}
           </ul>
         </div>
