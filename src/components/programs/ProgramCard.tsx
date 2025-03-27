@@ -42,7 +42,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
   // Determine the correct Calendly link based on the title of the program
   const getCalendlyLink = () => {
     if (title === "Strategy Session") {
-      return "https://calendly.com/poquillo/quick-consultation";
+      return "https://calendly.com/poquillo/strategy-session";
     } else {
       return "https://calendly.com/poquillo/quick-consultation";
     }
