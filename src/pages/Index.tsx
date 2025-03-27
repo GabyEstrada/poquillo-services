@@ -32,7 +32,7 @@ const Index = () => {
           </p>
           <div className="pt-4">
             <Link 
-              to="/programs"
+              to="/who-we-serve"
               className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg text-center"
             >
               Learn More
