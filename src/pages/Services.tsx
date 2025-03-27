@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -14,12 +13,12 @@ const ProgramsPage: React.FC = () => {
       title: "Quick Consultation",
       price: "$150",
       sessionDetails: "60-minute power session",
-      description: "A comprehensive program designed to help you launch your business with confidence and clarity.",
+      description: "Get Unstuck in 60 Minutes🚀\nFeeling stuck on one specific thing?\nLet's break through it together!",
       features: [
-        "Define your ideal client",
-        "Create a simple business system",
-        "Build authentic marketing strategies",
-        "Turn overthinking into action"
+        "One specific challenge or decision",
+        "No prep needed - just show up",
+        "One follow-up question (w/in 7 days)",
+        "Practical guidance, no fluff"
       ]
     },
     {

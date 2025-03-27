@@ -19,7 +19,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, price, sessionDetails,
       {sessionDetails && (
         <p className="text-gray-500 italic text-sm mb-4">{sessionDetails}</p>
       )}
-      <p className="text-gray-600 mb-6">
+      <p className="text-gray-600 mb-6 whitespace-pre-line">
         {description}
       </p>
       <ul className="list-disc list-inside text-gray-600 mb-6">
@@ -33,7 +33,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({ title, price, sessionDetails,
         rel="noopener noreferrer" 
         className="bg-pink-500 hover:bg-pink-700 text-white font-medium py-3 px-6 transition duration-300 inline-block"
       >
-        Schedule a Call
+        Let's Chat, Amiga
       </a>
     </div>
   );
