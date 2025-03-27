@@ -22,16 +22,16 @@ const Footer: React.FC = () => {
               <ul className="space-y-2">
                 <li><Link to="/" className="text-gray-600 hover:text-pink-500 transition">Home</Link></li>
                 <li><Link to="/who-we-serve" className="text-gray-600 hover:text-pink-500 transition">Who We Serve</Link></li>
-                <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Programs</Link></li>
+                <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Services</Link></li>
                 <li><Link to="/about" className="text-gray-600 hover:text-pink-500 transition">About</Link></li>
               </ul>
             </div>
             <div>
-              <h3 className="font-bold mb-4">Programs</h3>
+              <h3 className="font-bold mb-4">Services</h3>
               <ul className="space-y-2">
-                <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Launch Accelerator</Link></li>
-                <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Clarity Session</Link></li>
-                <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Implementation Support</Link></li>
+                <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Quick Consultation</Link></li>
+                <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Business Clarity Session</Link></li>
+                <li><Link to="/programs" className="text-gray-600 hover:text-pink-500 transition">Strategy Session</Link></li>
               </ul>
             </div>
             <div>

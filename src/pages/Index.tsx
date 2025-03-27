@@ -125,8 +125,8 @@ const Index = () => {
           <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
             {[
               {
-                title: "90-Day Launch Accelerator",
-                description: "From vision to first client with a simple, step-by-step plan that actually works.",
+                title: "Quick Consultation",
+                description: "Get unstuck in 60 minutes with a focused session to break through one specific challenge.",
                 icon: "🚀"
               },
               {
@@ -135,8 +135,8 @@ const Index = () => {
                 icon: "✨"
               },
               {
-                title: "Custom Implementation Support",
-                description: "Personalized guidance to take your established business to the next level.",
+                title: "Strategy Session",
+                description: "A comprehensive 3-hour transformation to create a complete strategy for your business growth.",
                 icon: "⭐"
               }
             ].map((service, index) => (
@@ -276,16 +276,14 @@ const Index = () => {
             Ready for clarity in your business?
           </h2>
           <p className="text-xl mb-10 max-w-3xl mx-auto">
-            Let's turn confusion into your next clear step. Book a discovery call to see how we can work together.
+            Let's turn confusion into your next clear step.
           </p>
-          <a 
-            href="https://calendly.com/poquillo/30-min"
-            target="_blank"
-            rel="noopener noreferrer"
+          <Link 
+            to="/programs"
             className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-4 px-10 transition duration-300 text-lg inline-block"
           >
-            Book Your Discovery Call
-          </a>
+            Explore Our Services
+          </Link>
         </div>
       </section>
       
