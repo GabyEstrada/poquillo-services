@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -60,6 +61,29 @@ const ProgramsPage: React.FC = () => {
         "Multi-passionate people feeling scattered",
         "Those doubting if they're 'expert enough'",
         "Anyone stuck between different business ideas"
+      ]
+    },
+    {
+      title: "Business Systems Strategy Session",
+      price: "$3,000",
+      sessionDetails: "+ follow up",
+      description: "Transform Your Business System(s)✨\nSay goodbye to chaos and hello to streamlined operations that run without you!",
+      features: [
+        "Comprehensive systems assessment",
+        "90-day access to call recording",
+        "In-depth analysis & report with a personalized action plan",
+        "Custom systems & process framework recommendations",
+        "30-minute implementation check-in (within 30 days)",
+        "Optional: Coaching sessions package (Implementation guidance, accountability & DM support between sessions – available to purchase post-session)"
+      ],
+      perfectFor: [
+        "Scaling without working more hours",
+        "Building a sustainable growth strategy",
+        "Transforming how you operate day-to-day",
+        "Streamlining your client onboarding",
+        "Building team workflows that scale",
+        "Designing a content system that's sustainable",
+        "Optimizing your customer experience"
       ]
     }
   ];

@@ -43,6 +43,8 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
   const getCalendlyLink = () => {
     if (title === "Strategy Session") {
       return "https://calendly.com/poquillo/strategy-session";
+    } else if (title === "Business Systems Strategy Session") {
+      return "https://calendly.com/poquillo/strategy-session";
     } else {
       return "https://calendly.com/poquillo/quick-consultation";
     }
@@ -54,6 +56,8 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
       return "Let's Transform Together";
     } else if (title === "From Fear to Clarity Session") {
       return "Let's Get Clarity, Amiga";
+    } else if (title === "Business Systems Strategy Session") {
+      return "Let's Streamline Your Business";
     } else {
       return "Let's Chat, Amiga";
     }
