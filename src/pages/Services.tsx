@@ -67,7 +67,7 @@ const ProgramsPage: React.FC = () => {
     {
       title: "Business Systems Strategy Session",
       price: "$3,000",
-      sessionDetails: "+ follow up",
+      sessionDetails: "3-hour intensive + follow-up",
       description: "Transform Your Business System(s)✨\nSay goodbye to chaos and hello to streamlined operations that run without you!",
       features: [
         "Comprehensive systems assessment",
