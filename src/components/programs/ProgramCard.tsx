@@ -48,6 +48,17 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
     }
   };
   
+  // Determine the button text based on the program title
+  const getButtonText = () => {
+    if (title === "Strategy Session") {
+      return "Let's Transform Together";
+    } else if (title === "From Fear to Clarity Session") {
+      return "Let's Get Clarity, Amiga";
+    } else {
+      return "Let's Chat, Amiga";
+    }
+  };
+  
   return (
     <div className="bg-white border border-gray-100 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300 overflow-hidden">
       {/* Card Header with a subtle gradient background */}
@@ -105,7 +116,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           rel="noopener noreferrer" 
           className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-6 transition duration-300 rounded-md inline-block w-full text-center shadow-md hover:shadow-lg"
         >
-          {title === "Strategy Session" ? "Let's Transform Together" : "Let's Chat, Amiga"}
+          {getButtonText()}
         </a>
       </div>
     </div>

@@ -44,6 +44,25 @@ const ProgramsPage: React.FC = () => {
         "Building systems that scale",
         "Overhauling client acquisition"
       ]
+    },
+    {
+      title: "From Fear to Clarity Session",
+      price: "$1,500",
+      sessionDetails: "90-min breakthrough + implementation plan",
+      description: "Find Your Perfect Client & Service✨\nTransform self-doubt into confidence as you discover exactly who you're meant to serve and how to serve them. No more second-guessing!",
+      features: [
+        "90-minute deep-dive breakthrough session",
+        "Clarify your core values & non-negotiables",
+        "Personalized report on your ideal client profile & where to find them",
+        "30-day confidence-building plan (client acquisition + pricing)",
+        "Optional 30-minute follow-up call after report delivery"
+      ],
+      perfectFor: [
+        "Talented professionals unsure who to serve",
+        "Multi-passionate people feeling scattered",
+        "Those doubting if they're 'expert enough'",
+        "Anyone stuck between different business ideas"
+      ]
     }
   ];
   
