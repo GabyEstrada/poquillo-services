@@ -48,7 +48,7 @@ const ProgramsPage: React.FC = () => {
     {
       title: "From Fear to Clarity Session",
       price: "$1,500",
-      sessionDetails: "90-min breakthrough + implementation plan",
+      sessionDetails: "90-min breakthrough + follow-up",
       description: "Find Your Perfect Client & Service✨\nTransform self-doubt into confidence as you discover exactly who you're meant to serve and how to serve them. No more second-guessing!",
       features: [
         "Clarify your core values & non-negotiables",
