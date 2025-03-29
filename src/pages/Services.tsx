@@ -1,3 +1,4 @@
+
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -51,6 +52,7 @@ const ProgramsPage: React.FC = () => {
       description: "Find Your Perfect Client & Service✨\nTransform self-doubt into confidence as you discover exactly who you're meant to serve and how to serve them. No more second-guessing!",
       features: [
         "Clarify your core values & non-negotiables",
+        "30-day access to call recording",
         "Personalized report on your ideal client profile & where to find them",
         "30-day confidence-building plan (client acquisition + pricing)",
         "Optional 30-minute follow-up call after report delivery"
