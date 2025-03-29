@@ -29,7 +29,7 @@ const ProgramsPage: React.FC = () => {
     },
     {
       title: "Strategy Session",
-      price: "$1,000",
+      price: "$3,000",
       sessionDetails: "3-hour transformation + follow-up",
       description: "Transform Your Business in a Day✨\nReady for a complete business refresh?\nLet's make big moves together!",
       features: [
