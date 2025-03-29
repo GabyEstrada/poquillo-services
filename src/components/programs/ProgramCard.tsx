@@ -44,7 +44,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
     if (title === "Strategy Session") {
       return "https://calendly.com/poquillo/strategy-session";
     } else if (title === "Business Systems Strategy Session") {
-      return "https://calendly.com/poquillo/strategy-session";
+      return "https://calendly.com/poquillo/transform-business-systems";
     } else if (title === "From Fear to Clarity Session") {
       return "https://calendly.com/poquillo/from-fear-to-clarity";
     } else {
