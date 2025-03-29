@@ -8,6 +8,7 @@ import Index from "./pages/Index";
 import WhoWeServePage from "./pages/WhoWeServe";
 import ServicesPage from "./pages/Services";
 import AboutPage from "./pages/About";
+import ThankYouPage from "./pages/ThankYou";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -23,6 +24,7 @@ const App = () => (
           <Route path="/who-we-serve" element={<WhoWeServePage />} />
           <Route path="/programs" element={<ServicesPage />} />
           <Route path="/about" element={<AboutPage />} />
+          <Route path="/thank-you" element={<ThankYouPage />} />
           <Route path="*" element={<NotFound />} />
         </Routes>
       </HashRouter>
