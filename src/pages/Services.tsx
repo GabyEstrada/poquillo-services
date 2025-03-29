@@ -55,7 +55,7 @@ const ProgramsPage: React.FC = () => {
         "30-day access to call recording",
         "Personalized report on your ideal client profile & where to find them",
         "30-day confidence-building plan (client acquisition + pricing)",
-        "Optional 30-minute follow-up call after report delivery"
+        "Optional 30-minute follow-up call after report delivery (w/in 30 days)"
       ],
       perfectFor: [
         "Talented professionals unsure who to serve",
