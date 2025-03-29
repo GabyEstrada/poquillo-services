@@ -72,8 +72,7 @@ const ProgramsPage: React.FC = () => {
         "90-day access to call recording",
         "In-depth analysis & report with a personalized action plan",
         "Custom systems & process framework recommendations",
-        "30-minute implementation check-in (within 30 days)",
-        "Optional: Coaching sessions package (Implementation guidance, accountability & DM support between sessions – available to purchase post-session)"
+        "30-minute implementation check-in (within 30 days)"
       ],
       perfectFor: [
         "Scaling without working more hours",
