@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 
 interface NavigationProps {
-  currentPage: 'home' | 'who-we-serve' | 'programs' | 'about';
+  currentPage: 'home' | 'who-we-serve' | 'programs' | 'about' | 'none';
 }
 
 const Navigation: React.FC<NavigationProps> = ({ currentPage }) => {
