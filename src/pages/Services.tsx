@@ -1,4 +1,3 @@
-
 import React from 'react';
 import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
@@ -130,6 +129,11 @@ const ProgramsPage: React.FC = () => {
           <p className="text-lg text-gray-600 max-w-3xl mx-auto">
             Two simple ways to make business feel less complicado.
           </p>
+          <div className="mt-8 bg-pink-50 p-5 rounded-lg border border-pink-100 max-w-3xl mx-auto">
+            <p className="text-gray-700 italic">
+              <span className="font-semibold">Note:</span> 3-month and 6-month coaching/working session packages (including implementation guidance, accountability, and DM support between sessions) are available for purchase post-session.
+            </p>
+          </div>
         </div>
       </section>
       
