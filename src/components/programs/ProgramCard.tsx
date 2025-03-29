@@ -29,13 +29,13 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
     // Keep the first icon as is, use check for the rest
     if (index === 0) {
       if (item.toLowerCase().includes('idea') || item.toLowerCase().includes('deciding')) {
-        return <LightbulbIcon className="text-pink-500" size={18} />;
+        return <LightbulbIcon className="text-pink-500" size={16} />;
       } else {
-        return <Target className="text-pink-500" size={18} />;
+        return <Target className="text-pink-500" size={16} />;
       }
     } else {
-      // Use checkmark for all other items
-      return <Check className="text-pink-500" size={18} />;
+      // Use checkmark for all other items - use the same size as other icons
+      return <Check className="text-pink-500" size={16} />;
     }
   };
   
@@ -85,7 +85,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           {restOfDescription}
         </p>
         
-        {/* Features list with improved styling */}
+        {/* Features list with consistent icon sizing */}
         <div className="mb-6 bg-gray-50 p-5 rounded-md">
           <p className="font-semibold text-gray-800 mb-3">What's included:</p>
           <ul className="space-y-2">
@@ -98,7 +98,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
           </ul>
         </div>
         
-        {/* Perfect for section with existing icons but improved styling */}
+        {/* Perfect for section with consistent icon sizing */}
         {perfectFor && perfectFor.length > 0 && (
           <div className="mb-6 bg-pink-50 p-5 border-l-4 border-pink-400 rounded-md">
             <p className="font-semibold text-gray-800 mb-3">Perfect for:</p>
