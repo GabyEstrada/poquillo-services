@@ -10,8 +10,8 @@ const ProgramsPage: React.FC = () => {
   // Program data
   const programs = [
     {
-      title: "Quick Consultation",
-      price: "$150",
+      title: "Business Consultation",
+      price: "$1,000",
       sessionDetails: "60-minute power session",
       description: "Get Unstuck in 60 Minutes🚀\nFeeling stuck on one specific thing?\nLet's break through it together!",
       features: [
@@ -199,3 +199,4 @@ const ProgramsPage: React.FC = () => {
 };
 
 export default ProgramsPage;
+
