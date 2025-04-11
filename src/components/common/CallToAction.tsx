@@ -6,7 +6,7 @@ interface CallToActionProps {
   title: string;
   description: string;
   primaryButtonText: string;
-  primaryButtonLink: string;
+  primaryButtonLink?: string;
   secondaryButtonText?: string;
   secondaryButtonLink?: string;
   isExternal?: boolean;
@@ -32,11 +32,14 @@ const CallToAction: React.FC<CallToActionProps> = ({
     ? "bg-white border border-black text-black font-medium py-3 px-8 transition duration-300 hover:bg-gray-50 text-lg"
     : "bg-transparent hover:bg-white hover:text-black border border-white text-white font-medium py-3 px-8 transition duration-300 text-lg";
 
+  // Default Calendly URL
+  const calendlyUrl = "https://calendly.com/poquillo/30-min";
+
   const PrimaryButton = () => {
     if (isExternal) {
       return (
         <a 
-          href={primaryButtonLink} 
+          href={primaryButtonLink || calendlyUrl} 
           target="_blank" 
           rel="noopener noreferrer" 
           className={primaryBtnClass}
@@ -46,19 +49,19 @@ const CallToAction: React.FC<CallToActionProps> = ({
       );
     }
     return (
-      <Link to={primaryButtonLink} className={primaryBtnClass}>
+      <Link to={primaryButtonLink || "/services"} className={primaryBtnClass}>
         {primaryButtonText}
       </Link>
     );
   };
 
   const SecondaryButton = () => {
-    if (!secondaryButtonText || !secondaryButtonLink) return null;
+    if (!secondaryButtonText) return null;
     
     if (isExternal) {
       return (
         <a 
-          href={secondaryButtonLink} 
+          href={secondaryButtonLink || calendlyUrl} 
           target="_blank" 
           rel="noopener noreferrer" 
           className={secondaryBtnClass}
@@ -68,7 +71,7 @@ const CallToAction: React.FC<CallToActionProps> = ({
       );
     }
     return (
-      <Link to={secondaryButtonLink} className={secondaryBtnClass}>
+      <Link to={secondaryButtonLink || "/services"} className={secondaryBtnClass}>
         {secondaryButtonText}
       </Link>
     );

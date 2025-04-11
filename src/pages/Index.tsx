@@ -31,12 +31,14 @@ const Index = () => {
             Practical guidance for women entrepreneurs ready to build businesses they love without the overwhelm.
           </p>
           <div className="pt-4">
-            <Link 
-              to="/who-we-serve"
+            <a 
+              href="https://calendly.com/poquillo/30-min"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-black hover:bg-gray-800 text-white font-medium py-3 px-8 transition duration-300 text-lg text-center"
             >
-              Learn More
-            </Link>
+              Book a 30-Minute Session
+            </a>
           </div>
         </div>
         <div className="md:w-1/2 relative">
@@ -220,12 +222,14 @@ const Index = () => {
           <p className="text-xl mb-10 max-w-3xl mx-auto">
             Let's turn confusion into your next clear step.
           </p>
-          <Link 
-            to="/programs"
+          <a 
+            href="https://calendly.com/poquillo/30-min"
+            target="_blank"
+            rel="noopener noreferrer"
             className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-4 px-10 transition duration-300 text-lg inline-block"
           >
-            Explore Our Services
-          </Link>
+            Book a Call
+          </a>
         </div>
       </section>
       

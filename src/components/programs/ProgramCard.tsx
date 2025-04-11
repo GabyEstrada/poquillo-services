@@ -1,4 +1,3 @@
-
 import React from 'react';
 import { Check, Target, LightbulbIcon } from 'lucide-react';
 
@@ -39,18 +38,8 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
     }
   };
   
-  // Determine the correct Calendly link based on the title of the program
-  const getCalendlyLink = () => {
-    if (title === "Strategy Session") {
-      return "https://calendly.com/poquillo/strategy-session";
-    } else if (title === "Business Systems Strategy Session") {
-      return "https://calendly.com/poquillo/transform-business-systems";
-    } else if (title === "From Fear to Clarity Session") {
-      return "https://calendly.com/poquillo/from-fear-to-clarity";
-    } else {
-      return "https://calendly.com/poquillo/quick-consultation";
-    }
-  };
+  // Use the single Calendly URL for all program cards
+  const calendlyUrl = "https://calendly.com/poquillo/30-min";
   
   // Determine the button text based on the program title
   const getButtonText = () => {
@@ -117,7 +106,7 @@ const ProgramCard: React.FC<ProgramCardProps> = ({
         
         {/* Call to action button with improved styling */}
         <a 
-          href={getCalendlyLink()} 
+          href={calendlyUrl} 
           target="_blank" 
           rel="noopener noreferrer" 
           className="bg-pink-500 hover:bg-pink-600 text-white font-medium py-3 px-6 transition duration-300 rounded-md inline-block w-full text-center shadow-md hover:shadow-lg"
