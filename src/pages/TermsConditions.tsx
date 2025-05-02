@@ -1,4 +1,3 @@
-
 import React from 'react';
 import CallToAction from '../components/common/CallToAction';
 import Navigation from '../components/layout/Navigation';
@@ -194,7 +193,7 @@ const TermsConditions: React.FC = () => {
               15.2 You can contact us:
             </p>
             <ul>
-              <li>(a) to schedule a conversation: https://calendly.com/poquillo/30-min</li>
+              <li>(a) to schedule a conversation: <a href="https://calendly.com/poquillo/30-min" target="_blank" rel="noopener noreferrer">https://calendly.com/poquillo/30-min</a></li>
               <li>(b) through our website: https://poquillo.co</li>
             </ul>
 
@@ -241,7 +240,7 @@ const TermsConditions: React.FC = () => {
             </ul>
 
             <p><em>Last updated: May 1, 2025</em></p>
-            <p>Poquillo LLC</p>
+            <p>Poquillo</p>
           </div>
         </section>
 

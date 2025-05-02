@@ -1,4 +1,3 @@
-
 import React from 'react';
 import CallToAction from '../components/common/CallToAction';
 import Navigation from '../components/layout/Navigation';
@@ -85,7 +84,7 @@ const PrivacyPolicy: React.FC = () => {
               <li>You can opt out of marketing communications at any time by:
                 <ul>
                   <li>Clicking the "unsubscribe" link in any marketing email</li>
-                  <li>Emailing us at [contact@poquillo.com]</li>
+                  <li>Scheduling a time with us at <a href="https://calendly.com/poquillo/30-min" target="_blank" rel="noopener noreferrer">https://calendly.com/poquillo/30-min</a></li>
                   <li>Texting "STOP" to any SMS marketing messages</li>
                 </ul>
               </li>
@@ -94,7 +93,7 @@ const PrivacyPolicy: React.FC = () => {
               <li>We will not sell, distribute, or lease your personal information to third parties for their own marketing purposes without your explicit consent</li>
             </ul>
             <p>
-              You may request details of personal information which we hold about you under data protection laws. If you believe that any information we are holding on you is incorrect or incomplete, please email us as soon as possible. We will promptly correct any information found to be incorrect.
+              You may request details of personal information which we hold about you under data protection laws. If you believe that any information we are holding on you is incorrect or incomplete, please schedule a time with us as soon as possible. We will promptly correct any information found to be incorrect.
             </p>
 
             <h2>How Long We Keep Your Information</h2>
@@ -113,7 +112,7 @@ const PrivacyPolicy: React.FC = () => {
               <li>The right to object to processing</li>
             </ul>
             <p>
-              If you wish to exercise any of these rights, please contact us at [contact@poquillo.com].
+              If you wish to exercise any of these rights, please schedule a time with us at <a href="https://calendly.com/poquillo/30-min" target="_blank" rel="noopener noreferrer">https://calendly.com/poquillo/30-min</a>.
             </p>
 
             <h2>Changes to Our Privacy Policy</h2>
@@ -123,11 +122,11 @@ const PrivacyPolicy: React.FC = () => {
 
             <h2>Contact Information</h2>
             <p>
-              If you have any questions about this privacy policy or our treatment of your personal data, please email us at [contact@poquillo.com].
+              If you have any questions about this privacy policy or our treatment of your personal data, please schedule a time with us at <a href="https://calendly.com/poquillo/30-min" target="_blank" rel="noopener noreferrer">https://calendly.com/poquillo/30-min</a>.
             </p>
 
             <p><em>Last updated: May 1, 2025</em></p>
-            <p>Poquillo LLC</p>
+            <p>Poquillo</p>
           </div>
         </section>
 
