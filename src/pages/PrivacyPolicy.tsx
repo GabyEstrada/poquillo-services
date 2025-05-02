@@ -1,7 +1,7 @@
 
 import React from 'react';
-import { CallToAction } from '../components/common/CallToAction';
-import { Navigation } from '../components/layout/Navigation';
+import CallToAction from '../components/common/CallToAction';
+import Navigation from '../components/layout/Navigation';
 import Footer from '../components/layout/Footer';
 
 const PrivacyPolicy: React.FC = () => {
@@ -11,7 +11,7 @@ const PrivacyPolicy: React.FC = () => {
 
   return (
     <>
-      <Navigation />
+      <Navigation currentPage="none" />
       <main className="pt-16 md:pt-24">
         <section className="py-10 px-6 md:px-12 lg:px-24">
           <div className="max-w-5xl mx-auto prose prose-headings:text-black prose-headings:font-bold prose-p:text-gray-700">
