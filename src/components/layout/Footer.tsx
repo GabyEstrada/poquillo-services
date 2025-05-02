@@ -64,7 +64,10 @@ const Footer: React.FC = () => {
           </div>
         </div>
         <div className="border-t border-gray-200 mt-12 pt-8 text-center text-gray-500 text-sm">
-          <p>© 2025 Poquillo. All rights reserved.</p>
+          <p className="mb-2">© 2025 Poquillo. All rights reserved.</p>
+          <p>
+            <Link to="/privacy-policy" className="text-gray-500 hover:text-pink-500 transition">Privacy Policy</Link>
+          </p>
         </div>
       </div>
     </footer>
